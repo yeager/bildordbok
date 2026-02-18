@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Daniel Nylander
+# This file is distributed under the same license as the bildordbok package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bildordbok 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-18 11:18+0100\n"
+"PO-Revision-Date: 2026-02-18 10:19+0000\n"
+"Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304961/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/bildordbok/main.py:50
+msgid "Lyssna (svenska)"
+msgstr ""
+
+#: src/bildordbok/main.py:65
+msgid "Listen (English)"
+msgstr ""
+
+#: src/bildordbok/main.py:119
+msgid "🔊 Svenska"
+msgstr ""
+
+#: src/bildordbok/main.py:122
+msgid "🔊 English"
+msgstr ""
+
+#: src/bildordbok/main.py:130
+msgid "Visa svar"
+msgstr ""
+
+#: src/bildordbok/main.py:143
+msgid "Fel ✗"
+msgstr ""
+
+#: src/bildordbok/main.py:144
+msgid "Svårt"
+msgstr ""
+
+#: src/bildordbok/main.py:145
+msgid "Bra"
+msgstr ""
+
+#: src/bildordbok/main.py:146
+msgid "Lätt ✓"
+msgstr ""
+
+#: src/bildordbok/main.py:161
+msgid "🎉 Alla kort klara!"
+msgstr ""
+
+#: src/bildordbok/main.py:164 src/bildordbok/main.py:258
+msgid "Tillbaka"
+msgstr ""
+
+#: src/bildordbok/main.py:183
+msgid "Inga kort att öva!"
+msgstr ""
+
+#: src/bildordbok/main.py:199
+#, python-brace-format
+msgid "Kort {current} / {total}"
+msgstr ""
+
+#: src/bildordbok/main.py:232 src/bildordbok/main.py:245
+#: src/bildordbok/main.py:515
+msgid "Bildordbok"
+msgstr ""
+
+#: src/bildordbok/main.py:245 src/bildordbok/main.py:432
+msgid "Tvåspråkig bildordbok"
+msgstr ""
+
+#: src/bildordbok/main.py:251
+msgid "Sök (Ctrl+F)"
+msgstr ""
+
+#: src/bildordbok/main.py:265
+msgid "Växla tema"
+msgstr ""
+
+#: src/bildordbok/main.py:272
+msgid "Om Bildordbok"
+msgstr ""
+
+#: src/bildordbok/main.py:278
+msgid "Flashcards / Övning"
+msgstr ""
+
+#: src/bildordbok/main.py:286
+msgid "Sök ord..."
+msgstr ""
+
+#: src/bildordbok/main.py:342 src/bildordbok/main.py:433
+#, python-brace-format
+msgid "{count} ord i ordboken"
+msgstr ""
+
+#: src/bildordbok/main.py:362
+msgid "📖 Bildordbok"
+msgstr ""
+
+#: src/bildordbok/main.py:366
+msgid "Välj en kategori för att börja lära dig ord"
+msgstr ""
+
+#: src/bildordbok/main.py:398
+#, python-brace-format
+msgid "{count} ord"
+msgstr ""
+
+#: src/bildordbok/main.py:427
+#, python-brace-format
+msgid "{count} ord i {category}"
+msgstr ""
+
+#: src/bildordbok/main.py:465
+#, python-brace-format
+msgid "Sökresultat: \"{query}\""
+msgstr ""
+
+#: src/bildordbok/main.py:466
+#, python-brace-format
+msgid "{count} träffar"
+msgstr ""
+
+#: src/bildordbok/main.py:470
+msgid "📝 Flashcards"
+msgstr ""
+
+#: src/bildordbok/main.py:473
+msgid "Övningsläge – Spaced Repetition"
+msgstr ""
+
+#: src/bildordbok/main.py:524
+msgid ""
+"Tvåspråkig bildordbok med TTS.\n"
+"För barn med språkstörning och nyanlända."
+msgstr ""

@@ -1,0 +1,2 @@
+[console_scripts]
+bildordbok = bildordbok.main:main
