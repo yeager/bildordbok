@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bildordbok"
+version = "0.1.0"
+description = "Tvåspråkig bildordbok med TTS – för barn med språkstörning och nyanlända"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.10"
+authors = [
+    {name = "Daniel Nylander"}
+]
+dependencies = [
+    "PyGObject>=3.42",
+]
+
+[project.scripts]
+bildordbok = "bildordbok.main:main"
+
+[project.urls]
+Homepage = "https://github.com/yeager/bildordbok"
+Repository = "https://github.com/yeager/bildordbok"
+
+[tool.setuptools.packages.find]
+where = ["src"]

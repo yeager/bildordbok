@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Bildordbok
+GenericName=Picture Dictionary
+Comment=Tvåspråkig bildordbok med TTS
+Exec=bildordbok
+Icon=se.danielnylander.Bildordbok
+Terminal=false
+Type=Application
+Categories=Education;Languages;
+Keywords=ordbok;dictionary;tts;flashcard;
+StartupNotify=true
