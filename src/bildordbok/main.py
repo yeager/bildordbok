@@ -8,11 +8,12 @@ import gi
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 
-from gi.repository import Gtk, Adw, Gio, GLib, Pango  # noqa: E402
+from gi.repository import Gtk, Adw, Gio, GLib, Pango, GdkPixbuf  # noqa: E402
 
 from bildordbok.words import WordDatabase, WordEntry, CATEGORIES  # noqa: E402
 from bildordbok.tts import speak  # noqa: E402
 from bildordbok import __version__, _  # noqa: E402
+from bildordbok import arasaac  # noqa: E402
 
 APP_ID = "se.danielnylander.Bildordbok"
 
@@ -32,11 +33,23 @@ class WordCard(Gtk.Box):
         self.set_margin_start(8)
         self.set_margin_end(8)
 
-        # Emoji as "image"
-        emoji_label = Gtk.Label(label=word.emoji)
-        emoji_label.add_css_class("title-1")
-        emoji_label.set_markup(f'<span size="72000">{word.emoji}</span>')
-        self.append(emoji_label)
+        # Try ARASAAC pictogram, fall back to emoji
+        icon_widget = None
+        try:
+            provider = arasaac.get_provider()
+            path = provider.get_pictogram(word.en, lang="en", resolution=128)
+            if path:
+                pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(
+                    path, 96, 96, True)
+                icon_widget = Gtk.Image.new_from_pixbuf(pixbuf)
+                icon_widget.set_pixel_size(96)
+        except Exception:
+            pass
+        if icon_widget is None:
+            icon_widget = Gtk.Label(label=word.emoji)
+            icon_widget.add_css_class("title-1")
+            icon_widget.set_markup(f'<span size="72000">{word.emoji}</span>')
+        self.append(icon_widget)
 
         # Swedish word
         sv_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=4)
