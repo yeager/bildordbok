@@ -285,6 +285,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
 
         # Menu
         menu = Gio.Menu()
+        menu.append(_("Export Word List"), "app.export")
         menu.append(_("Preferences"), "app.preferences")
         menu.append(_("Keyboard Shortcuts"), "app.shortcuts")
         menu.append(_("About Bildordbok"), "app.about")
@@ -543,6 +544,7 @@ class BildordbokApp(Adw.Application):
             ("about", self._on_about, ["F1"]),
             ("shortcuts", self._on_shortcuts, ["<Control>slash"]),
             ("preferences", self._on_preferences, ["<Control>comma"]),
+            ("export", self._on_export, ["<Control>e"]),
         ]:
             action = Gio.SimpleAction.new(name, None)
             action.connect("activate", cb)
@@ -709,6 +711,14 @@ class BildordbokApp(Adw.Application):
         self.settings["debug"] = row.get_active()
         _save_settings(self.settings)
 
+    def _on_export(self, *_):
+        win = self.props.active_window
+        if win and hasattr(win, 'db'):
+            from bildordbok.export import show_export_dialog
+            show_export_dialog(win, win.db.words,
+                               status_callback=getattr(win, 'statusbar', None) and
+                               (lambda t: win.statusbar.set_text(t)))
+
     def _on_about(self, *_args):
         about = Adw.AboutDialog(
             application_name=_("Bildordbok"),
@@ -754,6 +764,12 @@ class BildordbokApp(Adw.Application):
                       <object class="GtkShortcutsShortcut">
                         <property name="title" translatable="yes">Search</property>
                         <property name="accelerator">&lt;Control&gt;f</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkShortcutsShortcut">
+                        <property name="title" translatable="yes">Export</property>
+                        <property name="accelerator">&lt;Control&gt;e</property>
                       </object>
                     </child>
                     <child>

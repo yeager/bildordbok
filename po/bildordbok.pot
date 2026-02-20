@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bildordbok\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 20:20+0100\n"
+"POT-Creation-Date: 2026-02-20 20:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,11 +71,12 @@ msgid "Kort {current} / {total}"
 msgstr ""
 
 #: src/bildordbok/main.py:248 src/bildordbok/main.py:261
-#: src/bildordbok/main.py:714
+#: src/bildordbok/main.py:714 src/bildordbok/main.py:724
 msgid "Bildordbok"
 msgstr ""
 
 #: src/bildordbok/main.py:261 src/bildordbok/main.py:451
+#: src/bildordbok/main.py:452
 msgid "Tvåspråkig bildordbok"
 msgstr ""
 
@@ -88,79 +89,81 @@ msgid "Växla tema"
 msgstr ""
 
 #: src/bildordbok/main.py:288 src/bildordbok/main.py:605
+#: src/bildordbok/main.py:289 src/bildordbok/main.py:607
 msgid "Preferences"
 msgstr ""
 
-#: src/bildordbok/main.py:289
+#: src/bildordbok/main.py:289 src/bildordbok/main.py:290
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/bildordbok/main.py:290
+#: src/bildordbok/main.py:290 src/bildordbok/main.py:291
 msgid "About Bildordbok"
 msgstr ""
 
-#: src/bildordbok/main.py:291
+#: src/bildordbok/main.py:291 src/bildordbok/main.py:292
 msgid "Quit"
 msgstr ""
 
-#: src/bildordbok/main.py:297
+#: src/bildordbok/main.py:297 src/bildordbok/main.py:298
 msgid "Flashcards / Övning"
 msgstr ""
 
-#: src/bildordbok/main.py:305
+#: src/bildordbok/main.py:305 src/bildordbok/main.py:306
 msgid "Sök ord..."
 msgstr ""
 
 #: src/bildordbok/main.py:361 src/bildordbok/main.py:452
+#: src/bildordbok/main.py:362 src/bildordbok/main.py:453
 #, python-brace-format
 msgid "{count} ord i ordboken"
 msgstr ""
 
-#: src/bildordbok/main.py:381
+#: src/bildordbok/main.py:381 src/bildordbok/main.py:382
 msgid "📖 Bildordbok"
 msgstr ""
 
-#: src/bildordbok/main.py:385
+#: src/bildordbok/main.py:385 src/bildordbok/main.py:386
 msgid "Välj en kategori för att börja lära dig ord"
 msgstr ""
 
-#: src/bildordbok/main.py:417
+#: src/bildordbok/main.py:417 src/bildordbok/main.py:418
 #, python-brace-format
 msgid "{count} ord"
 msgstr ""
 
-#: src/bildordbok/main.py:446
+#: src/bildordbok/main.py:446 src/bildordbok/main.py:447
 #, python-brace-format
 msgid "{count} ord i {category}"
 msgstr ""
 
-#: src/bildordbok/main.py:484
+#: src/bildordbok/main.py:484 src/bildordbok/main.py:485
 #, python-brace-format
 msgid "Sökresultat: \"{query}\""
 msgstr ""
 
-#: src/bildordbok/main.py:485
+#: src/bildordbok/main.py:485 src/bildordbok/main.py:486
 #, python-brace-format
 msgid "{count} träffar"
 msgstr ""
 
-#: src/bildordbok/main.py:489
+#: src/bildordbok/main.py:489 src/bildordbok/main.py:490
 msgid "📝 Flashcards"
 msgstr ""
 
-#: src/bildordbok/main.py:492
+#: src/bildordbok/main.py:492 src/bildordbok/main.py:493
 msgid "Övningsläge – Spaced Repetition"
 msgstr ""
 
-#: src/bildordbok/main.py:567
+#: src/bildordbok/main.py:567 src/bildordbok/main.py:569
 msgid "Welcome"
 msgstr ""
 
-#: src/bildordbok/main.py:573
+#: src/bildordbok/main.py:573 src/bildordbok/main.py:575
 msgid "Welcome to Bildordbok"
 msgstr ""
 
-#: src/bildordbok/main.py:575
+#: src/bildordbok/main.py:575 src/bildordbok/main.py:577
 msgid ""
 "Learn words with pictures and speech.\n"
 "\n"
@@ -170,107 +173,107 @@ msgid ""
 "✓ ARASAAC pictograms included"
 msgstr ""
 
-#: src/bildordbok/main.py:582
+#: src/bildordbok/main.py:582 src/bildordbok/main.py:584
 msgid "Get Started"
 msgstr ""
 
-#: src/bildordbok/main.py:608
+#: src/bildordbok/main.py:608 src/bildordbok/main.py:610
 msgid "General"
 msgstr ""
 
-#: src/bildordbok/main.py:612
+#: src/bildordbok/main.py:612 src/bildordbok/main.py:614
 msgid "Appearance"
 msgstr ""
 
-#: src/bildordbok/main.py:615
+#: src/bildordbok/main.py:615 src/bildordbok/main.py:617
 msgid "Theme"
 msgstr ""
 
-#: src/bildordbok/main.py:616
+#: src/bildordbok/main.py:616 src/bildordbok/main.py:618
 msgid "Choose light, dark, or follow system"
 msgstr ""
 
-#: src/bildordbok/main.py:618
+#: src/bildordbok/main.py:618 src/bildordbok/main.py:620
 msgid "System"
 msgstr ""
 
-#: src/bildordbok/main.py:618
+#: src/bildordbok/main.py:618 src/bildordbok/main.py:620
 msgid "Light"
 msgstr ""
 
-#: src/bildordbok/main.py:618
+#: src/bildordbok/main.py:618 src/bildordbok/main.py:620
 msgid "Dark"
 msgstr ""
 
-#: src/bildordbok/main.py:626
+#: src/bildordbok/main.py:626 src/bildordbok/main.py:628
 msgid "Icon Size"
 msgstr ""
 
-#: src/bildordbok/main.py:627
+#: src/bildordbok/main.py:627 src/bildordbok/main.py:629
 msgid "Size of pictogram icons"
 msgstr ""
 
-#: src/bildordbok/main.py:629
+#: src/bildordbok/main.py:629 src/bildordbok/main.py:631
 msgid "Small"
 msgstr ""
 
-#: src/bildordbok/main.py:629
+#: src/bildordbok/main.py:629 src/bildordbok/main.py:631
 msgid "Medium"
 msgstr ""
 
-#: src/bildordbok/main.py:629
+#: src/bildordbok/main.py:629 src/bildordbok/main.py:631
 msgid "Large"
 msgstr ""
 
-#: src/bildordbok/main.py:637
+#: src/bildordbok/main.py:637 src/bildordbok/main.py:639
 msgid "Speech"
 msgstr ""
 
-#: src/bildordbok/main.py:640
+#: src/bildordbok/main.py:640 src/bildordbok/main.py:642
 msgid "Text-to-speech"
 msgstr ""
 
-#: src/bildordbok/main.py:641
+#: src/bildordbok/main.py:641 src/bildordbok/main.py:643
 msgid "Read words aloud when tapped"
 msgstr ""
 
-#: src/bildordbok/main.py:651
+#: src/bildordbok/main.py:651 src/bildordbok/main.py:653
 msgid "Advanced"
 msgstr ""
 
-#: src/bildordbok/main.py:655
+#: src/bildordbok/main.py:655 src/bildordbok/main.py:657
 msgid "ARASAAC Cache"
 msgstr ""
 
-#: src/bildordbok/main.py:660
+#: src/bildordbok/main.py:660 src/bildordbok/main.py:662
 msgid "Cached pictograms"
 msgstr ""
 
-#: src/bildordbok/main.py:662
+#: src/bildordbok/main.py:662 src/bildordbok/main.py:664
 msgid "Clear"
 msgstr ""
 
-#: src/bildordbok/main.py:671
+#: src/bildordbok/main.py:671 src/bildordbok/main.py:673
 msgid "Developer"
 msgstr ""
 
-#: src/bildordbok/main.py:673
+#: src/bildordbok/main.py:673 src/bildordbok/main.py:675
 msgid "Debug mode"
 msgstr ""
 
-#: src/bildordbok/main.py:674
+#: src/bildordbok/main.py:674 src/bildordbok/main.py:676
 msgid "Show extra logging in terminal"
 msgstr ""
 
-#: src/bildordbok/main.py:706
+#: src/bildordbok/main.py:706 src/bildordbok/main.py:708
 msgid "Cleared"
 msgstr ""
 
-#: src/bildordbok/main.py:720
+#: src/bildordbok/main.py:720 src/bildordbok/main.py:730
 msgid "ARASAAC pictograms (https://arasaac.org)"
 msgstr ""
 
-#: src/bildordbok/main.py:728
+#: src/bildordbok/main.py:728 src/bildordbok/main.py:738
 msgid ""
 "Bilingual picture dictionary with text-to-speech for children with language "
 "disorders.\n"
@@ -279,6 +282,80 @@ msgid ""
 "structure."
 msgstr ""
 
-#: src/bildordbok/main.py:739
+#: src/bildordbok/main.py:739 src/bildordbok/main.py:749
 msgid "Autismappar"
+msgstr ""
+
+#: src/bildordbok/export.py:26 src/bildordbok/export.py:80
+msgid "Swedish"
+msgstr ""
+
+#: src/bildordbok/export.py:26 src/bildordbok/export.py:82
+msgid "English"
+msgstr ""
+
+#: src/bildordbok/export.py:26 src/bildordbok/export.py:84
+msgid "Category"
+msgstr ""
+
+#: src/bildordbok/export.py:26
+msgid "Emoji"
+msgstr ""
+
+#: src/bildordbok/export.py:65
+msgid "Picture Dictionary"
+msgstr ""
+
+#: src/bildordbok/export.py:70
+msgid "words"
+msgstr ""
+
+#: src/bildordbok/export.py:131 src/bildordbok/main.py:288
+msgid "Export Word List"
+msgstr ""
+
+#: src/bildordbok/export.py:132
+msgid "Choose export format:"
+msgstr ""
+
+#: src/bildordbok/export.py:134
+msgid "Cancel"
+msgstr ""
+
+#: src/bildordbok/export.py:135
+msgid "CSV"
+msgstr ""
+
+#: src/bildordbok/export.py:136
+msgid "JSON"
+msgstr ""
+
+#: src/bildordbok/export.py:137
+msgid "PDF"
+msgstr ""
+
+#: src/bildordbok/export.py:157
+msgid "Save Export"
+msgstr ""
+
+#: src/bildordbok/export.py:171
+#, python-format
+msgid "Exported %s"
+msgstr ""
+
+#: src/bildordbok/export.py:174 src/bildordbok/export.py:197
+#, python-format
+msgid "Export error: %s"
+msgstr ""
+
+#: src/bildordbok/export.py:179
+msgid "Save PDF"
+msgstr ""
+
+#: src/bildordbok/export.py:192
+msgid "PDF exported"
+msgstr ""
+
+#: src/bildordbok/export.py:194
+msgid "PDF export requires pycairo"
 msgstr ""
