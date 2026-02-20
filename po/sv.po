@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the bildordbok package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: bildordbok 0.1.0\n"
+"Project-Id-Version: bildordbok\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-18 11:18+0100\n"
+"POT-Creation-Date: 2026-02-20 20:28+0100\n"
 "PO-Revision-Date: 2026-02-18 10:19+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304961/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,131 +21,349 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/bildordbok/main.py:50
-msgid "Lyssna (svenska)"
-msgstr ""
+#: src/bildordbok/export.py:26 src/bildordbok/export.py:80
+msgid "Swedish"
+msgstr "Svenska"
 
-#: src/bildordbok/main.py:65
+#: src/bildordbok/export.py:26 src/bildordbok/export.py:82
+msgid "English"
+msgstr "Engelska"
+
+#: src/bildordbok/export.py:26 src/bildordbok/export.py:84
+msgid "Category"
+msgstr "Kategori"
+
+#: src/bildordbok/export.py:26
+msgid "Emoji"
+msgstr "Känsloikon"
+
+#: src/bildordbok/export.py:65
+msgid "Picture Dictionary"
+msgstr "Bildordbok"
+
+#: src/bildordbok/export.py:70
+msgid "words"
+msgstr "ord"
+
+#: src/bildordbok/export.py:131 src/bildordbok/main.py:288
+msgid "Export Word List"
+msgstr "Exportera ordlista"
+
+#: src/bildordbok/export.py:132
+msgid "Choose export format:"
+msgstr "Välj exportformat:"
+
+#: src/bildordbok/export.py:134
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/bildordbok/export.py:135
+msgid "CSV"
+msgstr "CSV"
+
+#: src/bildordbok/export.py:136
+msgid "JSON"
+msgstr "JSON"
+
+#: src/bildordbok/export.py:137
+msgid "PDF"
+msgstr "PDF"
+
+#: src/bildordbok/export.py:157
+msgid "Save Export"
+msgstr "Spara export"
+
+#: src/bildordbok/export.py:171
+#, python-format
+msgid "Exported %s"
+msgstr "Exporterade %s"
+
+#: src/bildordbok/export.py:174 src/bildordbok/export.py:197
+#, python-format
+msgid "Export error: %s"
+msgstr "Exportfel: %s"
+
+#: src/bildordbok/export.py:179
+msgid "Save PDF"
+msgstr "Spara PDF"
+
+#: src/bildordbok/export.py:192
+msgid "PDF exported"
+msgstr "PDF exporterad"
+
+#: src/bildordbok/export.py:194
+msgid "PDF export requires pycairo"
+msgstr "PDF-export kräver pycairo"
+
+#: src/bildordbok/main.py:66
+msgid "Listen (Swedish)"
+msgstr "Lyssna (svenska)"
+
+#: src/bildordbok/main.py:81
 msgid "Listen (English)"
-msgstr ""
+msgstr "Lyssna (engelska)"
 
-#: src/bildordbok/main.py:119
-msgid "🔊 Svenska"
-msgstr ""
+#: src/bildordbok/main.py:135
+msgid "🔊 Swedish"
+msgstr "🔊 Svenska"
 
-#: src/bildordbok/main.py:122
+#: src/bildordbok/main.py:138
 msgid "🔊 English"
-msgstr ""
-
-#: src/bildordbok/main.py:130
-msgid "Visa svar"
-msgstr ""
-
-#: src/bildordbok/main.py:143
-msgid "Fel ✗"
-msgstr ""
-
-#: src/bildordbok/main.py:144
-msgid "Svårt"
-msgstr ""
-
-#: src/bildordbok/main.py:145
-msgid "Bra"
-msgstr ""
+msgstr "🔊 Engelska"
 
 #: src/bildordbok/main.py:146
-msgid "Lätt ✓"
-msgstr ""
+msgid "Show Answer"
+msgstr "Visa svar"
+
+#: src/bildordbok/main.py:159
+msgid "Wrong ✗"
+msgstr "Fel ✗"
+
+#: src/bildordbok/main.py:160
+msgid "Hard"
+msgstr "Svårt"
 
 #: src/bildordbok/main.py:161
-msgid "🎉 Alla kort klara!"
-msgstr ""
+msgid "Good"
+msgstr "Bra"
 
-#: src/bildordbok/main.py:164 src/bildordbok/main.py:258
-msgid "Tillbaka"
-msgstr ""
+#: src/bildordbok/main.py:162
+msgid "Easy ✓"
+msgstr "Lätt ✓"
 
-#: src/bildordbok/main.py:183
-msgid "Inga kort att öva!"
-msgstr ""
+#: src/bildordbok/main.py:177
+msgid "🎉 All cards done!"
+msgstr "🎉 Alla kort klara!"
+
+#: src/bildordbok/main.py:180 src/bildordbok/main.py:274
+msgid "Back"
+msgstr "Tillbaka"
 
 #: src/bildordbok/main.py:199
-#, python-brace-format
-msgid "Kort {current} / {total}"
-msgstr ""
+msgid "No cards to practice!"
+msgstr "Inga kort för att träna!"
 
-#: src/bildordbok/main.py:232 src/bildordbok/main.py:245
-#: src/bildordbok/main.py:515
+#: src/bildordbok/main.py:215
+#, python-brace-format
+msgid "Card {current} / {total}"
+msgstr "Kort {current} / {total}"
+
+#: src/bildordbok/main.py:248 src/bildordbok/main.py:261
+#: src/bildordbok/main.py:724
 msgid "Bildordbok"
-msgstr ""
+msgstr "Bildordbok"
 
-#: src/bildordbok/main.py:245 src/bildordbok/main.py:432
-msgid "Tvåspråkig bildordbok"
-msgstr ""
+#: src/bildordbok/main.py:261 src/bildordbok/main.py:452
+msgid "Bilingual picture dictionary"
+msgstr "Tvåspråkig bildordbok"
 
-#: src/bildordbok/main.py:251
-msgid "Sök (Ctrl+F)"
-msgstr ""
+#: src/bildordbok/main.py:267
+msgid "Search (Ctrl+F)"
+msgstr "Sök (Ctrl+F)"
 
-#: src/bildordbok/main.py:265
-msgid "Växla tema"
-msgstr ""
+#: src/bildordbok/main.py:281
+msgid "Toggle theme"
+msgstr "Växla tema"
 
-#: src/bildordbok/main.py:272
-msgid "Om Bildordbok"
-msgstr ""
+#: src/bildordbok/main.py:289 src/bildordbok/main.py:607
+msgid "Preferences"
+msgstr "Inställningar"
 
-#: src/bildordbok/main.py:278
-msgid "Flashcards / Övning"
-msgstr ""
+#: src/bildordbok/main.py:290
+msgid "Keyboard Shortcuts"
+msgstr "Tangentbordsgenvägar"
 
-#: src/bildordbok/main.py:286
-msgid "Sök ord..."
-msgstr ""
+#: src/bildordbok/main.py:291
+msgid "About Bildordbok"
+msgstr "Om Bildordbok"
 
-#: src/bildordbok/main.py:342 src/bildordbok/main.py:433
+#: src/bildordbok/main.py:292
+msgid "Quit"
+msgstr "Avsluta"
+
+#: src/bildordbok/main.py:298
+msgid "Flashcards / Practice"
+msgstr "Bildkort / Övning"
+
+#: src/bildordbok/main.py:306
+msgid "Search words..."
+msgstr "Sök efter ord..."
+
+#: src/bildordbok/main.py:362 src/bildordbok/main.py:453
 #, python-brace-format
-msgid "{count} ord i ordboken"
-msgstr ""
+msgid "{count} words in dictionary"
+msgstr "{count} ord i ordboken"
 
-#: src/bildordbok/main.py:362
+#: src/bildordbok/main.py:382
 msgid "📖 Bildordbok"
-msgstr ""
+msgstr "📖 Bildordbok"
 
-#: src/bildordbok/main.py:366
-msgid "Välj en kategori för att börja lära dig ord"
-msgstr ""
+#: src/bildordbok/main.py:386
+msgid "Choose a category to start learning words"
+msgstr "Välj en kategori för att börja lära ord"
 
-#: src/bildordbok/main.py:398
+#: src/bildordbok/main.py:418
 #, python-brace-format
-msgid "{count} ord"
-msgstr ""
+msgid "{count} words"
+msgstr "{count} ord"
 
-#: src/bildordbok/main.py:427
+#: src/bildordbok/main.py:447
 #, python-brace-format
-msgid "{count} ord i {category}"
-msgstr ""
+msgid "{count} words in {category}"
+msgstr "{count} ord i {category}"
 
-#: src/bildordbok/main.py:465
+#: src/bildordbok/main.py:485
 #, python-brace-format
-msgid "Sökresultat: \"{query}\""
-msgstr ""
+msgid "Search results: \"{query}\""
+msgstr "Sökresultat: \"{query}\""
 
-#: src/bildordbok/main.py:466
+#: src/bildordbok/main.py:486
 #, python-brace-format
-msgid "{count} träffar"
-msgstr ""
+msgid "{count} results"
+msgstr "{count} resultat"
 
-#: src/bildordbok/main.py:470
+#: src/bildordbok/main.py:490
 msgid "📝 Flashcards"
-msgstr ""
+msgstr "📝 Bildkort"
 
-#: src/bildordbok/main.py:473
-msgid "Övningsläge – Spaced Repetition"
-msgstr ""
+#: src/bildordbok/main.py:493
+msgid "Practice mode — Spaced Repetition"
+msgstr "Övningsläge — Intervallupprepning"
 
-#: src/bildordbok/main.py:524
+#: src/bildordbok/main.py:569
+msgid "Welcome"
+msgstr "Välkommen"
+
+#: src/bildordbok/main.py:575
+msgid "Welcome to Bildordbok"
+msgstr "Välkommen till Bildordbok"
+
+#: src/bildordbok/main.py:577
 msgid ""
-"Tvåspråkig bildordbok med TTS.\n"
-"För barn med språkstörning och nyanlända."
+"Learn words with pictures and speech.\n"
+"\n"
+"✓ Browse words by category\n"
+"✓ Listen to pronunciation in Swedish and English\n"
+"✓ Practice with flashcards\n"
+"✓ ARASAAC pictograms included"
 msgstr ""
+"Lär dig ord med bilder och tal.\n"
+"\n"
+"✓ Bläddra bland ord efter kategori\n"
+"✓ Lyssna på uttalet på svenska och engelska\n"
+"✓ Öva med bildkort\n"
+"✓ ARASAAC-piktogram ingår"
+
+#: src/bildordbok/main.py:584
+msgid "Get Started"
+msgstr "Kom igång"
+
+#: src/bildordbok/main.py:610
+msgid "General"
+msgstr "Allmänt"
+
+#: src/bildordbok/main.py:614
+msgid "Appearance"
+msgstr "Utseende"
+
+#: src/bildordbok/main.py:617
+msgid "Theme"
+msgstr "Tema"
+
+#: src/bildordbok/main.py:618
+msgid "Choose light, dark, or follow system"
+msgstr "Välj ljust, mörkt eller följ systemet"
+
+#: src/bildordbok/main.py:620
+msgid "System"
+msgstr "System"
+
+#: src/bildordbok/main.py:620
+msgid "Light"
+msgstr "Ljust"
+
+#: src/bildordbok/main.py:620
+msgid "Dark"
+msgstr "Mörkt"
+
+#: src/bildordbok/main.py:628
+msgid "Icon Size"
+msgstr "Ikonstorlek"
+
+#: src/bildordbok/main.py:629
+msgid "Size of pictogram icons"
+msgstr "Storlek för piktogramikoner"
+
+#: src/bildordbok/main.py:631
+msgid "Small"
+msgstr "Små"
+
+#: src/bildordbok/main.py:631
+msgid "Medium"
+msgstr "Medel"
+
+#: src/bildordbok/main.py:631
+msgid "Large"
+msgstr "Stora"
+
+#: src/bildordbok/main.py:639
+msgid "Speech"
+msgstr "Tal"
+
+#: src/bildordbok/main.py:642
+msgid "Text-to-speech"
+msgstr "Text-till-tal"
+
+#: src/bildordbok/main.py:643
+msgid "Read words aloud when tapped"
+msgstr "Läs orden högt när du trycker på dem"
+
+#: src/bildordbok/main.py:653
+msgid "Advanced"
+msgstr "Avancerat"
+
+#: src/bildordbok/main.py:657
+msgid "ARASAAC Cache"
+msgstr "ARASAAC-cache"
+
+#: src/bildordbok/main.py:662
+msgid "Cached pictograms"
+msgstr "Cachade piktogram"
+
+#: src/bildordbok/main.py:664
+msgid "Clear"
+msgstr "Töm"
+
+#: src/bildordbok/main.py:673
+msgid "Developer"
+msgstr "Utvecklare"
+
+#: src/bildordbok/main.py:675
+msgid "Debug mode"
+msgstr "Felsökningsläge"
+
+#: src/bildordbok/main.py:676
+msgid "Show extra logging in terminal"
+msgstr "Visa extra loggning i terminal"
+
+#: src/bildordbok/main.py:708
+msgid "Cleared"
+msgstr "Tömdes"
+
+#: src/bildordbok/main.py:730
+msgid "ARASAAC pictograms (https://arasaac.org)"
+msgstr "ARASAAC-piktogram (https://arasaac.org)"
+
+#: src/bildordbok/main.py:738
+msgid ""
+"Bilingual picture dictionary with text-to-speech for children with language disorders.\n"
+"\n"
+"Part of the Autismappar suite — free tools for communication and daily structure."
+msgstr ""
+"Tvåspråkig bildordbok med text-till-tal för barn med språkstörningar.\n"
+"\n"
+"En del av Autismappar-paketet – gratis verktyg för kommunikation och daglig struktur."
+
+#: src/bildordbok/main.py:749
+msgid "Autismappar"
+msgstr "Autismappar"
