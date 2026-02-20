@@ -1,39 +1,36 @@
-# Bildordbok
+# 📖 Bildordbok
 
-[![Version](https://img.shields.io/badge/version-0.2.0-blue)](https://github.com/yeager/bildordbok/releases)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Transifex](https://img.shields.io/badge/Transifex-Translate-green.svg)](https://www.transifex.com/danielnylander/bildordbok/)
+**Tvåspråkig bildordbok med TTS – för barn med språkstörning och nyanlända**
 
-Bilingual picture dictionary with text-to-speech — GTK4/Adwaita.
+Part of the [Autismappar](https://www.autismappar.se) suite — free, open-source tools for communication and daily structure for children with autism and language disorders.
 
-> **For:** Children and adults with developmental language disorder (DLD), autism, intellectual disabilities, and newcomers learning Swedish. Visual support with images, text, and TTS in two languages.
-
-![Bildordbok](screenshots/main.png)
+![Screenshot](screenshots/main.png)
 
 ## Features
 
-- **6 categories** — Animals, Food, Clothes, Body, Home, School
-- **80+ words** with images and text in Swedish + English
-- **ARASAAC pictograms** — automatic download of free pictograms from [ARASAAC](https://arasaac.org)
-- **Text-to-speech** in both languages (via espeak-ng)
-- **Spaced repetition** flashcards for effective learning
-- **Search** — quickly find words across categories
-- **Dark/light theme** toggle
+- 🎉 **Welcome dialog** — guided first-launch experience
+- ⚙️ **Preferences** — theme (light/dark/system), icon size, cache management
+- 📤 **Export/Print** — CSV, JSON and PDF export (Ctrl+E), tagged with app name, version and author
+- 🇸🇪 **Swedish ARASAAC search** — 13,000+ pictogram keywords, works completely offline
+- 🌍 **Translated** — full Swedish translation via [Transifex](https://app.transifex.com/danielnylander/bildordbok)
+- ⌨️ **Keyboard shortcuts** — Ctrl+E (export), Ctrl+, (preferences), F1 (about), Ctrl+/ (shortcuts)
+- 🖼️ **ARASAAC pictograms** — Creative Commons licensed pictograms from [arasaac.org](https://arasaac.org)
 
-## Installation
+## Install
 
 ### Debian/Ubuntu
 
 ```bash
-echo "deb [signed-by=/usr/share/keyrings/yeager-keyring.gpg] https://yeager.github.io/debian-repo stable main" | sudo tee /etc/apt/sources.list.d/yeager.list
-curl -fsSL https://yeager.github.io/debian-repo/yeager-keyring.gpg | sudo tee /usr/share/keyrings/yeager-keyring.gpg > /dev/null
+# Add repository
+curl -fsSL https://yeager.github.io/debian-repo/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/danne-l10n-suite.gpg
+echo "deb [signed-by=/usr/share/keyrings/danne-l10n-suite.gpg] https://yeager.github.io/debian-repo stable main" | sudo tee /etc/apt/sources.list.d/danne-l10n-suite.list
 sudo apt update && sudo apt install bildordbok
 ```
 
-### Fedora/openSUSE
+### Fedora/RHEL
 
 ```bash
-sudo dnf config-manager --add-repo https://yeager.github.io/rpm-repo/yeager.repo
+sudo dnf config-manager --add-repo https://yeager.github.io/rpm-repo/packages/
 sudo dnf install bildordbok
 ```
 
@@ -41,22 +38,38 @@ sudo dnf install bildordbok
 
 ```bash
 git clone https://github.com/yeager/bildordbok.git
-cd bildordbok && pip install -e .
+cd bildordbok
+pip install .
 bildordbok
 ```
 
-## ARASAAC Attribution
+## Dependencies
 
-Pictographic symbols © Gobierno de Aragón, created by Sergio Palao for [ARASAAC](https://arasaac.org), distributed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- Python 3.10+
+- GTK 4
+- libadwaita 1.4+
+- espeak-ng (optional, for text-to-speech)
 
 ## Translation
 
-Help translate on [Transifex](https://www.transifex.com/danielnylander/bildordbok/).
+Translate Bildordbok on [Transifex](https://app.transifex.com/danielnylander/bildordbok).
+
+Source strings are in English. Swedish translation by Daniel Nylander.
+
+## ARASAAC
+
+Pictograms by Sergio Palao, from [ARASAAC](https://arasaac.org), licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) by the Government of Aragon.
+
+Swedish ARASAAC keywords (15,607 entries) translated by Daniel Nylander.
 
 ## License
 
-GPL-3.0-or-later — see [LICENSE](LICENSE) for details.
+GPL-3.0-or-later
 
 ## Author
 
-**Daniel Nylander** — [danielnylander.se](https://danielnylander.se)
+**Daniel Nylander** — [daniel@danielnylander.se](mailto:daniel@danielnylander.se)
+
+- 🌐 [autismappar.se](https://www.autismappar.se)
+- 💻 [github.com/yeager](https://github.com/yeager)
+- 🌍 [Transifex](https://app.transifex.com/danielnylander)
