@@ -5,15 +5,14 @@ them locally. ARASAAC pictograms are licensed under Creative Commons
 BY-NC-SA 4.0 by the Government of Aragon, created by Sergio Palao.
 
 Usage:
-    provider = ArasaacProvider(cache_dir="~/.cache/arasaac")
-    pixbuf_path = await provider.get_pictogram("eat", lang="en")
+    provider = get_provider()
+    path = provider.get_pictogram("eat", lang="en", resolution=300)
 """
 
 from __future__ import annotations
 
 import json
 import os
-import hashlib
 from pathlib import Path
 from typing import Optional
 from urllib.request import urlopen, Request
@@ -21,11 +20,11 @@ from urllib.error import URLError
 
 
 ARASAAC_API = "https://api.arasaac.org/v1"
-ARASAAC_SEARCH = f"{ARASAAC_API}/pictograms/{{lang}}/search/{{term}}"
-ARASAAC_IMAGE = f"{ARASAAC_API}/pictograms/{{picto_id}}"
+ARASAAC_SEARCH = ARASAAC_API + "/pictograms/{lang}/search/{term}"
+ARASAAC_IMAGE = "https://static.arasaac.org/pictograms/{picto_id}/{picto_id}_{resolution}.png"
 
-# Default image parameters
-DEFAULT_PARAMS = "?download=false&plural=false&color=true"
+# Available resolutions on static.arasaac.org
+VALID_RESOLUTIONS = [300, 500, 2500]
 
 
 class ArasaacProvider:
@@ -65,7 +64,8 @@ class ArasaacProvider:
 
         url = ARASAAC_SEARCH.format(lang=lang, term=term)
         try:
-            req = Request(url, headers={"Accept": "application/json"})
+            req = Request(url, headers={"Accept": "application/json",
+                                        "User-Agent": "DanneL10nSuite/1.0"})
             with urlopen(req, timeout=5) as resp:
                 data = json.loads(resp.read())
                 if data and isinstance(data, list):
@@ -79,14 +79,16 @@ class ArasaacProvider:
 
     def get_image_path(self, picto_id: int, resolution: int = 300) -> Optional[str]:
         """Download pictogram image and return local file path."""
+        # Snap to nearest valid resolution (300, 500, 2500)
+        resolution = min(VALID_RESOLUTIONS, key=lambda r: abs(r - resolution))
         filename = f"{picto_id}_{resolution}.png"
         local_path = self.cache_dir / filename
         if local_path.exists():
             return str(local_path)
 
-        url = f"{ARASAAC_IMAGE}/{picto_id}{DEFAULT_PARAMS}&resolution={resolution}"
+        url = ARASAAC_IMAGE.format(picto_id=picto_id, resolution=resolution)
         try:
-            req = Request(url)
+            req = Request(url, headers={"User-Agent": "DanneL10nSuite/1.0"})
             with urlopen(req, timeout=10) as resp:
                 data = resp.read()
                 local_path.write_bytes(data)
