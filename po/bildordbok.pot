@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bildordbok\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 21:04+0100\n"
+"POT-Creation-Date: 2026-02-20 21:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,7 +145,7 @@ msgid "Card {current} / {total}"
 msgstr ""
 
 #: src/bildordbok/main.py:248 src/bildordbok/main.py:261
-#: src/bildordbok/main.py:724
+#: src/bildordbok/main.py:755
 msgid "Bildordbok"
 msgstr ""
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Toggle theme"
 msgstr ""
 
-#: src/bildordbok/main.py:289 src/bildordbok/main.py:607
+#: src/bildordbok/main.py:289 src/bildordbok/main.py:608
 msgid "Preferences"
 msgstr ""
 
@@ -226,15 +226,15 @@ msgstr ""
 msgid "Practice mode — Spaced Repetition"
 msgstr ""
 
-#: src/bildordbok/main.py:569
+#: src/bildordbok/main.py:570
 msgid "Welcome"
 msgstr ""
 
-#: src/bildordbok/main.py:575
+#: src/bildordbok/main.py:576
 msgid "Welcome to Bildordbok"
 msgstr ""
 
-#: src/bildordbok/main.py:577
+#: src/bildordbok/main.py:578
 msgid ""
 "Learn words with pictures and speech.\n"
 "\n"
@@ -244,107 +244,135 @@ msgid ""
 "✓ ARASAAC pictograms included"
 msgstr ""
 
-#: src/bildordbok/main.py:584
+#: src/bildordbok/main.py:585
 msgid "Get Started"
 msgstr ""
 
-#: src/bildordbok/main.py:610
+#: src/bildordbok/main.py:611
 msgid "General"
 msgstr ""
 
-#: src/bildordbok/main.py:614
+#: src/bildordbok/main.py:615
 msgid "Appearance"
 msgstr ""
 
-#: src/bildordbok/main.py:617
+#: src/bildordbok/main.py:618
 msgid "Theme"
 msgstr ""
 
-#: src/bildordbok/main.py:618
+#: src/bildordbok/main.py:619
 msgid "Choose light, dark, or follow system"
 msgstr ""
 
-#: src/bildordbok/main.py:620
+#: src/bildordbok/main.py:621
 msgid "System"
 msgstr ""
 
-#: src/bildordbok/main.py:620
+#: src/bildordbok/main.py:621
 msgid "Light"
 msgstr ""
 
-#: src/bildordbok/main.py:620
+#: src/bildordbok/main.py:621
 msgid "Dark"
 msgstr ""
 
-#: src/bildordbok/main.py:628
+#: src/bildordbok/main.py:629
 msgid "Icon Size"
 msgstr ""
 
-#: src/bildordbok/main.py:629
+#: src/bildordbok/main.py:630
 msgid "Size of pictogram icons"
 msgstr ""
 
-#: src/bildordbok/main.py:631
+#: src/bildordbok/main.py:632
 msgid "Small"
 msgstr ""
 
-#: src/bildordbok/main.py:631
+#: src/bildordbok/main.py:632
 msgid "Medium"
 msgstr ""
 
-#: src/bildordbok/main.py:631
+#: src/bildordbok/main.py:632
 msgid "Large"
 msgstr ""
 
-#: src/bildordbok/main.py:639
+#: src/bildordbok/main.py:640 src/bildordbok/main.py:654
 msgid "Speech"
 msgstr ""
 
-#: src/bildordbok/main.py:642
+#: src/bildordbok/main.py:643
 msgid "Text-to-speech"
 msgstr ""
 
-#: src/bildordbok/main.py:643
+#: src/bildordbok/main.py:644
 msgid "Read words aloud when tapped"
 msgstr ""
 
-#: src/bildordbok/main.py:653
+#: src/bildordbok/main.py:657
+msgid "Speech Engine"
+msgstr ""
+
+#: src/bildordbok/main.py:658
+msgid "Piper gives natural voices, espeak is robotic but lightweight"
+msgstr ""
+
+#: src/bildordbok/main.py:660
+msgid "Automatic"
+msgstr ""
+
+#: src/bildordbok/main.py:660
+msgid "Piper (natural)"
+msgstr ""
+
+#: src/bildordbok/main.py:660
+msgid "espeak-ng (robotic)"
+msgstr ""
+
+#: src/bildordbok/main.py:668
+msgid "Speech Speed"
+msgstr ""
+
+#: src/bildordbok/main.py:669
+msgid "Slower speech can be easier to understand"
+msgstr ""
+
+#: src/bildordbok/main.py:684
 msgid "Advanced"
 msgstr ""
 
-#: src/bildordbok/main.py:657
+#: src/bildordbok/main.py:688
 msgid "ARASAAC Cache"
 msgstr ""
 
-#: src/bildordbok/main.py:662
+#: src/bildordbok/main.py:693
 msgid "Cached pictograms"
 msgstr ""
 
-#: src/bildordbok/main.py:664
+#: src/bildordbok/main.py:695
 msgid "Clear"
 msgstr ""
 
-#: src/bildordbok/main.py:673
+#: src/bildordbok/main.py:704
 msgid "Developer"
 msgstr ""
 
-#: src/bildordbok/main.py:675
+#: src/bildordbok/main.py:706
 msgid "Debug mode"
 msgstr ""
 
-#: src/bildordbok/main.py:676
+#: src/bildordbok/main.py:707
 msgid "Show extra logging in terminal"
 msgstr ""
 
-#: src/bildordbok/main.py:708
+#: src/bildordbok/main.py:739
 msgid "Cleared"
 msgstr ""
 
-#: src/bildordbok/main.py:730
+#: src/bildordbok/main.py:761
 msgid "ARASAAC pictograms (https://arasaac.org)"
 msgstr ""
 
-#: src/bildordbok/main.py:738
+#: src/bildordbok/main.py:769
 msgid ""
 "Bilingual picture dictionary with text-to-speech for children with language "
 "disorders.\n"
@@ -353,6 +381,6 @@ msgid ""
 "structure."
 msgstr ""
 
-#: src/bildordbok/main.py:749
+#: src/bildordbok/main.py:780
 msgid "Autismappar"
 msgstr ""

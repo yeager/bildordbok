@@ -532,6 +532,7 @@ class BildordbokApp(Adw.Application):
         if not win:
             win = BildordbokWindow(self)
         self._apply_theme()
+        self._apply_tts_settings()
         win.present()
         if not self.settings.get("welcome_shown"):
             self._show_welcome(win)
@@ -647,6 +648,36 @@ class BildordbokApp(Adw.Application):
 
         basic.add(appearance)
         basic.add(speech)
+
+        # ── Speech ──
+        speech_group = Adw.PreferencesGroup()
+        speech_group.set_title(_("Speech"))
+
+        engine_row = Adw.ComboRow()
+        engine_row.set_title(_("Speech Engine"))
+        engine_row.set_subtitle(_("Piper gives natural voices, espeak is robotic but lightweight"))
+        engine_row.set_model(Gtk.StringList.new(
+            [_("Automatic"), _("Piper (natural)"), _("espeak-ng (robotic)")]))
+        cur_engine = {"auto": 0, "piper": 1, "espeak": 2}.get(
+            self.settings.get("tts_engine", "auto"), 0)
+        engine_row.set_selected(cur_engine)
+        engine_row.connect("notify::selected", self._on_tts_engine_changed)
+        speech_group.add(engine_row)
+
+        speed_row = Adw.ActionRow()
+        speed_row.set_title(_("Speech Speed"))
+        speed_row.set_subtitle(_("Slower speech can be easier to understand"))
+        speed_scale = Gtk.Scale.new_with_range(Gtk.Orientation.HORIZONTAL, 0.5, 2.0, 0.1)
+        speed_scale.set_value(self.settings.get("tts_speed", 1.0))
+        speed_scale.set_size_request(200, -1)
+        speed_scale.set_valign(Gtk.Align.CENTER)
+        speed_scale.set_draw_value(True)
+        speed_scale.connect("value-changed", self._on_tts_speed_changed)
+        speed_row.add_suffix(speed_scale)
+        speech_group.add(speed_row)
+
+        basic.add(speech_group)
+
         prefs.add(basic)
 
         advanced = Adw.PreferencesPage()
@@ -747,6 +778,11 @@ class BildordbokApp(Adw.Application):
             debug_info_filename="bildordbok-debug-info.txt",
         )
         about.add_link(_("Autismappar"), "https://www.autismappar.se")
+        about.add_link("GTK 4", "https://gtk.org")
+        about.add_link("libadwaita", "https://gnome.pages.gitlab.gnome.org/libadwaita/")
+        about.add_link("ARASAAC", "https://arasaac.org")
+        about.add_link("Piper TTS", "https://github.com/rhasspy/piper")
+        about.add_link("espeak-ng", "https://github.com/espeak-ng/espeak-ng")
         about.present(self.props.active_window)
 
     def _on_shortcuts(self, *_):
