@@ -63,7 +63,7 @@ class WordCard(Gtk.Box):
         sv_btn = Gtk.Button(icon_name="audio-speakers-symbolic")
         sv_btn.add_css_class("flat")
         sv_btn.add_css_class("circular")
-        sv_btn.set_tooltip_text(_("Lyssna (svenska)"))
+        sv_btn.set_tooltip_text(_("Listen (Swedish)"))
         sv_btn.connect("clicked", lambda _: speak(word.sv, "sv"))
         sv_box.append(sv_btn)
         self.append(sv_box)
@@ -132,7 +132,7 @@ class FlashcardView(Gtk.Box):
         self.tts_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
         self.tts_box.set_halign(Gtk.Align.CENTER)
         self.tts_box.set_visible(False)
-        sv_btn = Gtk.Button(label=_("🔊 Svenska"))
+        sv_btn = Gtk.Button(label=_("🔊 Swedish"))
         sv_btn.connect("clicked", self._speak_sv)
         self.tts_box.append(sv_btn)
         en_btn = Gtk.Button(label=_("🔊 English"))
@@ -143,7 +143,7 @@ class FlashcardView(Gtk.Box):
         self.append(self.card_box)
 
         # Reveal button
-        self.reveal_btn = Gtk.Button(label=_("Visa svar"))
+        self.reveal_btn = Gtk.Button(label=_("Show Answer"))
         self.reveal_btn.add_css_class("suggested-action")
         self.reveal_btn.add_css_class("pill")
         self.reveal_btn.set_halign(Gtk.Align.CENTER)
@@ -156,10 +156,10 @@ class FlashcardView(Gtk.Box):
         self.rating_box.set_visible(False)
 
         for quality, label, css in [
-            (1, _("Fel ✗"), "destructive-action"),
-            (3, _("Svårt"), ""),
-            (4, _("Bra"), ""),
-            (5, _("Lätt ✓"), "suggested-action"),
+            (1, _("Wrong ✗"), "destructive-action"),
+            (3, _("Hard"), ""),
+            (4, _("Good"), ""),
+            (5, _("Easy ✓"), "suggested-action"),
         ]:
             btn = Gtk.Button(label=label)
             if css:
@@ -174,10 +174,10 @@ class FlashcardView(Gtk.Box):
         self.done_box.set_halign(Gtk.Align.CENTER)
         self.done_box.set_valign(Gtk.Align.CENTER)
         self.done_box.set_visible(False)
-        done_label = Gtk.Label(label=_("🎉 Alla kort klara!"))
+        done_label = Gtk.Label(label=_("🎉 All cards done!"))
         done_label.add_css_class("title-1")
         self.done_box.append(done_label)
-        back_btn = Gtk.Button(label=_("Tillbaka"))
+        back_btn = Gtk.Button(label=_("Back"))
         back_btn.add_css_class("pill")
         back_btn.connect("clicked", lambda _: self.go_back())
         self.done_box.append(back_btn)
@@ -196,7 +196,7 @@ class FlashcardView(Gtk.Box):
             self.reveal_btn.set_visible(False)
             self.rating_box.set_visible(False)
             self.done_box.set_visible(True)
-            self.status_label.set_text(_("Inga kort att öva!"))
+            self.status_label.set_text(_("No cards to practice!"))
 
     def _show_card(self):
         if self.current_idx >= len(self.cards):
@@ -212,7 +212,7 @@ class FlashcardView(Gtk.Box):
         self.card_box.set_visible(True)
         self.revealed = False
         w = self.cards[self.current_idx]
-        self.status_label.set_text(_("Kort {current} / {total}").format(current=self.current_idx + 1, total=len(self.cards)))
+        self.status_label.set_text(_("Card {current} / {total}").format(current=self.current_idx + 1, total=len(self.cards)))
         self.emoji_label.set_markup(f'<span size="96000">{w.emoji}</span>')
         self.word_label.set_text(w.sv.capitalize())
         self.answer_label.set_text(w.en.capitalize())
@@ -258,27 +258,27 @@ class BildordbokWindow(Adw.ApplicationWindow):
         self.main_box.append(self.header)
 
         # Title
-        title_widget = Adw.WindowTitle(title=_("Bildordbok"), subtitle=_("Tvåspråkig bildordbok"))
+        title_widget = Adw.WindowTitle(title=_("Bildordbok"), subtitle=_("Bilingual picture dictionary"))
         self.header.set_title_widget(title_widget)
         self.title_widget = title_widget
 
         # Search button
         search_btn = Gtk.ToggleButton(icon_name="system-search-symbolic")
-        search_btn.set_tooltip_text(_("Sök (Ctrl+F)"))
+        search_btn.set_tooltip_text(_("Search (Ctrl+F)"))
         search_btn.connect("toggled", self._on_search_toggled)
         self.header.pack_start(search_btn)
         self.search_btn = search_btn
 
         # Back button (hidden initially)
         self.back_btn = Gtk.Button(icon_name="go-previous-symbolic")
-        self.back_btn.set_tooltip_text(_("Tillbaka"))
+        self.back_btn.set_tooltip_text(_("Back"))
         self.back_btn.set_visible(False)
         self.back_btn.connect("clicked", self._go_home)
         self.header.pack_start(self.back_btn)
 
         # Theme toggle
         theme_btn = Gtk.Button(icon_name="weather-clear-night-symbolic")
-        theme_btn.set_tooltip_text(_("Växla tema"))
+        theme_btn.set_tooltip_text(_("Toggle theme"))
         theme_btn.connect("clicked", self._toggle_theme)
         self.header.pack_end(theme_btn)
         self.theme_btn = theme_btn
@@ -295,7 +295,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
 
         # Flashcard button
         fc_btn = Gtk.Button(icon_name="view-refresh-symbolic")
-        fc_btn.set_tooltip_text(_("Flashcards / Övning"))
+        fc_btn.set_tooltip_text(_("Flashcards / Practice"))
         fc_btn.connect("clicked", self._start_flashcards)
         self.header.pack_end(fc_btn)
 
@@ -303,7 +303,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
         self.search_bar = Gtk.SearchBar()
         self.search_entry = Gtk.SearchEntry()
         self.search_entry.set_hexpand(True)
-        self.search_entry.set_placeholder_text(_("Sök ord..."))
+        self.search_entry.set_placeholder_text(_("Search words..."))
         self.search_entry.connect("search-changed", self._on_search_changed)
         self.search_bar.set_child(self.search_entry)
         self.search_bar.connect_entry(self.search_entry)
@@ -359,7 +359,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
         self.stack.add_named(self.search_scroll, "search")
 
         # Status bar
-        self.statusbar = Gtk.Label(label=_("{count} ord i ordboken").format(count=len(self.db.words)))
+        self.statusbar = Gtk.Label(label=_("{count} words in dictionary").format(count=len(self.db.words)))
         self.statusbar.add_css_class("dim-label")
         self.statusbar.set_margin_top(4)
         self.statusbar.set_margin_bottom(4)
@@ -383,7 +383,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
         welcome.set_margin_bottom(8)
         box.append(welcome)
 
-        sub = Gtk.Label(label=_("Välj en kategori för att börja lära dig ord"))
+        sub = Gtk.Label(label=_("Choose a category to start learning words"))
         sub.add_css_class("dim-label")
         sub.set_margin_bottom(24)
         box.append(sub)
@@ -415,7 +415,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
             btn_box.append(name)
 
             count = len(self.db.by_category(cat_id))
-            count_label = Gtk.Label(label=_("{count} ord").format(count=count))
+            count_label = Gtk.Label(label=_("{count} words").format(count=count))
             count_label.add_css_class("dim-label")
             btn_box.append(count_label)
 
@@ -444,13 +444,13 @@ class BildordbokWindow(Adw.ApplicationWindow):
             self.words_flow.append(card)
 
         self.stack.set_visible_child_name("words")
-        self.statusbar.set_text(_("{count} ord i {category}").format(count=len(self.db.by_category(cat_id)), category=cat_info["sv"]))
+        self.statusbar.set_text(_("{count} words in {category}").format(count=len(self.db.by_category(cat_id)), category=cat_info["sv"]))
 
     def _go_home(self, *_args):
         self.stack.set_visible_child_name("categories")
         self.back_btn.set_visible(False)
-        self.title_widget.set_subtitle(_("Tvåspråkig bildordbok"))
-        self.statusbar.set_text(_("{count} ord i ordboken").format(count=len(self.db.words)))
+        self.title_widget.set_subtitle(_("Bilingual picture dictionary"))
+        self.statusbar.set_text(_("{count} words in dictionary").format(count=len(self.db.words)))
         self.search_btn.set_active(False)
 
     def _on_search_toggled(self, btn):
@@ -482,15 +482,15 @@ class BildordbokWindow(Adw.ApplicationWindow):
 
         self.back_btn.set_visible(True)
         self.stack.set_visible_child_name("search")
-        self.title_widget.set_subtitle(_("Sökresultat: \"{query}\"").format(query=query))
-        self.statusbar.set_text(_("{count} träffar").format(count=len(results)))
+        self.title_widget.set_subtitle(_("Search results: \"{query}\"").format(query=query))
+        self.statusbar.set_text(_("{count} results").format(count=len(results)))
 
     def _start_flashcards(self, _btn):
         self.back_btn.set_visible(True)
         self.title_widget.set_subtitle(_("📝 Flashcards"))
         self.stack.set_visible_child_name("flashcards")
         self.flashcard_view.start()
-        self.statusbar.set_text(_("Övningsläge – Spaced Repetition"))
+        self.statusbar.set_text(_("Practice mode — Spaced Repetition"))
 
     def _toggle_theme(self, btn):
         mgr = Adw.StyleManager.get_default()
