@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Daniel Nylander
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the bildordbok package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bildordbok\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 20:28+0100\n"
+"POT-Creation-Date: 2026-02-21 08:20+0100\n"
 "PO-Revision-Date: 2026-02-18 10:19+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304961/sv/)\n"
@@ -37,7 +37,8 @@ msgstr "Kategori"
 msgid "Emoji"
 msgstr "Känsloikon"
 
-#: src/bildordbok/export.py:65
+#: src/bildordbok/export.py:65 src/bildordbok/main.py:248
+#: src/bildordbok/main.py:261 src/bildordbok/main.py:755
 msgid "Picture Dictionary"
 msgstr "Bildordbok"
 
@@ -148,11 +149,6 @@ msgstr "Inga kort för att träna!"
 msgid "Card {current} / {total}"
 msgstr "Kort {current} / {total}"
 
-#: src/bildordbok/main.py:248 src/bildordbok/main.py:261
-#: src/bildordbok/main.py:724
-msgid "Bildordbok"
-msgstr "Bildordbok"
-
 #: src/bildordbok/main.py:261 src/bildordbok/main.py:452
 msgid "Bilingual picture dictionary"
 msgstr "Tvåspråkig bildordbok"
@@ -165,7 +161,7 @@ msgstr "Sök (Ctrl+F)"
 msgid "Toggle theme"
 msgstr "Växla tema"
 
-#: src/bildordbok/main.py:289 src/bildordbok/main.py:607
+#: src/bildordbok/main.py:289 src/bildordbok/main.py:608
 msgid "Preferences"
 msgstr "Inställningar"
 
@@ -174,7 +170,7 @@ msgid "Keyboard Shortcuts"
 msgstr "Tangentbordsgenvägar"
 
 #: src/bildordbok/main.py:291
-msgid "About Bildordbok"
+msgid "About Picture Dictionary"
 msgstr "Om Bildordbok"
 
 #: src/bildordbok/main.py:292
@@ -230,15 +226,15 @@ msgstr "📝 Bildkort"
 msgid "Practice mode — Spaced Repetition"
 msgstr "Övningsläge — Intervallupprepning"
 
-#: src/bildordbok/main.py:569
+#: src/bildordbok/main.py:570
 msgid "Welcome"
 msgstr "Välkommen"
 
-#: src/bildordbok/main.py:575
-msgid "Welcome to Bildordbok"
+#: src/bildordbok/main.py:576
+msgid "Welcome to Picture Dictionary"
 msgstr "Välkommen till Bildordbok"
 
-#: src/bildordbok/main.py:577
+#: src/bildordbok/main.py:578
 msgid ""
 "Learn words with pictures and speech.\n"
 "\n"
@@ -254,107 +250,135 @@ msgstr ""
 "✓ Öva med bildkort\n"
 "✓ ARASAAC-piktogram ingår"
 
-#: src/bildordbok/main.py:584
+#: src/bildordbok/main.py:585
 msgid "Get Started"
 msgstr "Kom igång"
 
-#: src/bildordbok/main.py:610
+#: src/bildordbok/main.py:611
 msgid "General"
 msgstr "Allmänt"
 
-#: src/bildordbok/main.py:614
+#: src/bildordbok/main.py:615
 msgid "Appearance"
 msgstr "Utseende"
 
-#: src/bildordbok/main.py:617
+#: src/bildordbok/main.py:618
 msgid "Theme"
 msgstr "Tema"
 
-#: src/bildordbok/main.py:618
+#: src/bildordbok/main.py:619
 msgid "Choose light, dark, or follow system"
 msgstr "Välj ljust, mörkt eller följ systemet"
 
-#: src/bildordbok/main.py:620
+#: src/bildordbok/main.py:621
 msgid "System"
 msgstr "System"
 
-#: src/bildordbok/main.py:620
+#: src/bildordbok/main.py:621
 msgid "Light"
 msgstr "Ljust"
 
-#: src/bildordbok/main.py:620
+#: src/bildordbok/main.py:621
 msgid "Dark"
 msgstr "Mörkt"
 
-#: src/bildordbok/main.py:628
+#: src/bildordbok/main.py:629
 msgid "Icon Size"
 msgstr "Ikonstorlek"
 
-#: src/bildordbok/main.py:629
+#: src/bildordbok/main.py:630
 msgid "Size of pictogram icons"
 msgstr "Storlek för piktogramikoner"
 
-#: src/bildordbok/main.py:631
+#: src/bildordbok/main.py:632
 msgid "Small"
 msgstr "Små"
 
-#: src/bildordbok/main.py:631
+#: src/bildordbok/main.py:632
 msgid "Medium"
 msgstr "Medel"
 
-#: src/bildordbok/main.py:631
+#: src/bildordbok/main.py:632
 msgid "Large"
 msgstr "Stora"
 
-#: src/bildordbok/main.py:639
+#: src/bildordbok/main.py:640 src/bildordbok/main.py:654
 msgid "Speech"
 msgstr "Tal"
 
-#: src/bildordbok/main.py:642
+#: src/bildordbok/main.py:643
 msgid "Text-to-speech"
 msgstr "Text-till-tal"
 
-#: src/bildordbok/main.py:643
+#: src/bildordbok/main.py:644
 msgid "Read words aloud when tapped"
 msgstr "Läs orden högt när du trycker på dem"
 
-#: src/bildordbok/main.py:653
+#: src/bildordbok/main.py:657
+msgid "Speech Engine"
+msgstr "Talmotor"
+
+#: src/bildordbok/main.py:658
+msgid "Piper gives natural voices, espeak is robotic but lightweight"
+msgstr "Piper ger naturliga röster, espeak är robotlik men lättviktig."
+
+#: src/bildordbok/main.py:660
+msgid "Automatic"
+msgstr "Automatiskt"
+
+#: src/bildordbok/main.py:660
+msgid "Piper (natural)"
+msgstr "Piper (naturlig)"
+
+#: src/bildordbok/main.py:660
+msgid "espeak-ng (robotic)"
+msgstr "espeak-ng (robotlik)"
+
+#: src/bildordbok/main.py:668
+msgid "Speech Speed"
+msgstr "Talhastighet"
+
+#: src/bildordbok/main.py:669
+msgid "Slower speech can be easier to understand"
+msgstr "Långsammare tal kan vara lättare att förstå"
+
+#: src/bildordbok/main.py:684
 msgid "Advanced"
 msgstr "Avancerat"
 
-#: src/bildordbok/main.py:657
+#: src/bildordbok/main.py:688
 msgid "ARASAAC Cache"
 msgstr "ARASAAC-cache"
 
-#: src/bildordbok/main.py:662
+#: src/bildordbok/main.py:693
 msgid "Cached pictograms"
 msgstr "Cachade piktogram"
 
-#: src/bildordbok/main.py:664
+#: src/bildordbok/main.py:695
 msgid "Clear"
 msgstr "Töm"
 
-#: src/bildordbok/main.py:673
+#: src/bildordbok/main.py:704
 msgid "Developer"
 msgstr "Utvecklare"
 
-#: src/bildordbok/main.py:675
+#: src/bildordbok/main.py:706
 msgid "Debug mode"
 msgstr "Felsökningsläge"
 
-#: src/bildordbok/main.py:676
+#: src/bildordbok/main.py:707
 msgid "Show extra logging in terminal"
 msgstr "Visa extra loggning i terminal"
 
-#: src/bildordbok/main.py:708
+#: src/bildordbok/main.py:739
 msgid "Cleared"
 msgstr "Tömdes"
 
-#: src/bildordbok/main.py:730
+#: src/bildordbok/main.py:761
 msgid "ARASAAC pictograms (https://arasaac.org)"
 msgstr "ARASAAC-piktogram (https://arasaac.org)"
 
-#: src/bildordbok/main.py:738
+#: src/bildordbok/main.py:769
 msgid ""
 "Bilingual picture dictionary with text-to-speech for children with language disorders.\n"
 "\n"
@@ -364,6 +388,6 @@ msgstr ""
 "\n"
 "En del av Autismappar-paketet – gratis verktyg för kommunikation och daglig struktur."
 
-#: src/bildordbok/main.py:749
+#: src/bildordbok/main.py:780
 msgid "Autismappar"
 msgstr "Autismappar"
