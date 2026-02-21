@@ -10,7 +10,7 @@ _ = gettext.gettext
 
 from bildordbok import __version__
 
-APP_LABEL = "Bildordbok"
+APP_LABEL = _("Picture Dictionary")
 AUTHOR = "Daniel Nylander"
 WEBSITE = "www.autismappar.se"
 
