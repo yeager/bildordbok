@@ -1,7 +1,9 @@
 [Desktop Entry]
-Name=Bildordbok
+Name=Picture Dictionary
+Name[sv]=Bildordbok
 GenericName=Picture Dictionary
-Comment=Tvåspråkig bildordbok med TTS
+Comment=Bilingual picture dictionary with TTS
+Comment[sv]=Tvåspråkig bildordbok med TTS
 Exec=bildordbok
 Icon=se.danielnylander.Bildordbok
 Terminal=false
