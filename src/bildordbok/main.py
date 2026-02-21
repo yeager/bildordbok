@@ -17,6 +17,7 @@ from bildordbok.words import WordDatabase, WordEntry, CATEGORIES  # noqa: E402
 from bildordbok.tts import speak  # noqa: E402
 from bildordbok import __version__, _  # noqa: E402
 from bildordbok import arasaac  # noqa: E402
+from bildordbok.accessibility import apply_large_text
 
 APP_ID = "se.danielnylander.Bildordbok"
 
@@ -528,6 +529,7 @@ class BildordbokApp(Adw.Application):
         self.settings = _load_settings()
 
     def do_activate(self):
+        apply_large_text()
         win = self.props.active_window
         if not win:
             win = BildordbokWindow(self)
