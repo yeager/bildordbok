@@ -1,6 +1,8 @@
 """Word database for Bildordbok with categories and translations."""
 
 from __future__ import annotations
+import gettext
+_ = gettext.gettext
 import json
 import os
 from dataclasses import dataclass, field
@@ -10,12 +12,12 @@ import random
 import time
 
 CATEGORIES = {
-    "djur": {"sv": "Djur", "en": "Animals", "icon": "🐾"},
-    "mat": {"sv": "Mat", "en": "Food", "icon": "🍎"},
-    "klader": {"sv": "Kläder", "en": "Clothes", "icon": "👕"},
-    "kroppen": {"sv": "Kroppen", "en": "Body", "icon": "🫀"},
-    "hem": {"sv": "Hem", "en": "Home", "icon": "🏠"},
-    "skola": {"sv": "Skola", "en": "School", "icon": "📚"},
+    "djur": {"name": _("Animals"), "icon": "🐾"},
+    "mat": {"name": _("Food"), "icon": "🍎"},
+    "klader": {"name": _("Clothes"), "icon": "👕"},
+    "kroppen": {"name": _("Body"), "icon": "🫀"},
+    "hem": {"name": _("Home"), "icon": "🏠"},
+    "skola": {"name": _("School"), "icon": "📚"},
 }
 
 # Each word: (category, sv, en, emoji)
