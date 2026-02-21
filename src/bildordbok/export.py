@@ -12,6 +12,7 @@ from bildordbok import __version__
 
 APP_LABEL = "Bildordbok"
 AUTHOR = "Daniel Nylander"
+WEBSITE = "www.autismappar.se"
 
 import gi
 gi.require_version('Gtk', '4.0')
@@ -27,7 +28,7 @@ def words_to_csv(words):
     for w in words:
         writer.writerow([w.sv, w.en, w.category, w.emoji])
     writer.writerow([])
-    writer.writerow([f"{APP_LABEL} v{__version__} — {AUTHOR}"])
+    writer.writerow([f"{APP_LABEL} v{__version__} — {WEBSITE}"])
     return output.getvalue()
 
 
@@ -119,7 +120,7 @@ def words_to_pdf(words, output_path):
     ctx.set_font_size(9)
     ctx.set_source_rgb(0.5, 0.5, 0.5)
     ctx.move_to(40, height - 20)
-    ctx.show_text(f"{APP_LABEL} v{__version__} — {AUTHOR} — {datetime.now().strftime('%Y-%m-%d')}")
+    ctx.show_text(f"{APP_LABEL} v{__version__} — {WEBSITE} — {datetime.now().strftime('%Y-%m-%d')}")
 
     surface.finish()
     return True
