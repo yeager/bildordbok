@@ -245,7 +245,7 @@ class FlashcardView(Gtk.Box):
 
 class BildordbokWindow(Adw.ApplicationWindow):
     def __init__(self, app):
-        super().__init__(application=app, title=_("Bildordbok"), default_width=900, default_height=700)
+        super().__init__(application=app, title=_("Picture Dictionary"), default_width=900, default_height=700)
         self.db = WordDatabase()
         self._dark = False
 
@@ -258,7 +258,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
         self.main_box.append(self.header)
 
         # Title
-        title_widget = Adw.WindowTitle(title=_("Bildordbok"), subtitle=_("Bilingual picture dictionary"))
+        title_widget = Adw.WindowTitle(title=_("Picture Dictionary"), subtitle=_("Bilingual picture dictionary"))
         self.header.set_title_widget(title_widget)
         self.title_widget = title_widget
 
@@ -288,7 +288,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
         menu.append(_("Export Word List"), "app.export")
         menu.append(_("Preferences"), "app.preferences")
         menu.append(_("Keyboard Shortcuts"), "app.shortcuts")
-        menu.append(_("About Bildordbok"), "app.about")
+        menu.append(_("About Picture Dictionary"), "app.about")
         menu.append(_("Quit"), "app.quit")
         menu_btn = Gtk.MenuButton(icon_name="open-menu-symbolic", menu_model=menu)
         self.header.pack_end(menu_btn)
@@ -573,7 +573,7 @@ class BildordbokApp(Adw.Application):
 
         page = Adw.StatusPage()
         page.set_icon_name("se.danielnylander.Bildordbok")
-        page.set_title(_("Welcome to Bildordbok"))
+        page.set_title(_("Welcome to Picture Dictionary"))
         page.set_description(_(
             "Learn words with pictures and speech.\n\n"
             "✓ Browse words by category\n"
@@ -752,7 +752,7 @@ class BildordbokApp(Adw.Application):
 
     def _on_about(self, *_args):
         about = Adw.AboutDialog(
-            application_name=_("Bildordbok"),
+            application_name=_("Picture Dictionary"),
             application_icon="se.danielnylander.Bildordbok",
             developer_name="Daniel Nylander",
             version=__version__,
