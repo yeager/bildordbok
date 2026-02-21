@@ -411,7 +411,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
             icon.set_markup(f'<span size="48000">{cat_info["icon"]}</span>')
             btn_box.append(icon)
 
-            name = Gtk.Label(label=cat_info["sv"])
+            name = Gtk.Label(label=cat_info["name"])
             name.add_css_class("title-3")
             btn_box.append(name)
 
@@ -430,7 +430,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
 
     def _on_category_clicked(self, _btn, cat_id):
         cat_info = CATEGORIES[cat_id]
-        self.title_widget.set_subtitle(f"{cat_info['icon']} {cat_info['sv']}")
+        self.title_widget.set_subtitle(f"{cat_info['icon']} {cat_info['name']}")
         self.back_btn.set_visible(True)
 
         # Clear and populate
@@ -445,7 +445,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
             self.words_flow.append(card)
 
         self.stack.set_visible_child_name("words")
-        self.statusbar.set_text(_("{count} words in {category}").format(count=len(self.db.by_category(cat_id)), category=cat_info["sv"]))
+        self.statusbar.set_text(_("{count} words in {category}").format(count=len(self.db.by_category(cat_id)), category=cat_info["name"]))
 
     def _go_home(self, *_args):
         self.stack.set_visible_child_name("categories")
