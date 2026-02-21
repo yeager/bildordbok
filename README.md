@@ -1,5 +1,12 @@
 # 📖 Bildordbok
 
+
+## Screenshots
+
+| English | Svenska |
+|---------|---------|
+| ![English](screenshots/bildordbok_en.png) | ![Svenska](screenshots/bildordbok_sv.png) |
+
 **Tvåspråkig bildordbok med TTS – för barn med språkstörning och nyanlända**
 
 Part of the [Autismappar](https://www.autismappar.se) suite — free, open-source tools for communication and daily structure for children with autism and language disorders.
