@@ -605,7 +605,7 @@ class BildordbokApp(Adw.Application):
         _save_settings(self.settings)
         dialog.close()
 
-    def _on_preferences(self, *_):
+    def _on_preferences(self, *_args):
         prefs = Adw.PreferencesDialog()
         prefs.set_title(_("Preferences"))
 
@@ -744,7 +744,7 @@ class BildordbokApp(Adw.Application):
         self.settings["debug"] = row.get_active()
         _save_settings(self.settings)
 
-    def _on_export(self, *_):
+    def _on_export(self, *_args):
         win = self.props.active_window
         if win and hasattr(win, 'db'):
             from bildordbok.export import show_export_dialog
@@ -787,7 +787,7 @@ class BildordbokApp(Adw.Application):
         about.add_link("espeak-ng", "https://github.com/espeak-ng/espeak-ng")
         about.present(self.props.active_window)
 
-    def _on_shortcuts(self, *_):
+    def _on_shortcuts(self, *_args):
         builder = Gtk.Builder()
         builder.add_from_string('''
         <interface>

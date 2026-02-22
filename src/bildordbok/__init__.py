@@ -1,5 +1,5 @@
 """Bildordbok – tvåspråkig bildordbok med TTS."""
-__version__ = "0.3.3"
+__version__ = "0.3.4"
 
 import gettext
 import locale
