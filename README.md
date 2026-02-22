@@ -1,13 +1,13 @@
-# Bildordbok
+# Picture Dictionary
 
-Tvåspråkig bildordbok med ARASAAC-piktogram och uppläsning.
-80+ ord i 6 kategorier med spaced repetition.
+Bilingual picture dictionary with ARASAAC pictograms and audio.
+80+ words in 6 categories with spaced repetition.
 
-GTK4/Adwaita · Python · v0.3.4 · 92 översättningsbara strängar
+GTK4/Adwaita · Python · v0.3.4 · 92 translatable strings
 
-Del av [Autismappar](https://autismappar.se) — fria verktyg för barn med autism, språkstörning och ADHD.
+Part of [Autismappar](https://autismappar.se) — free tools for children with autism, language disorders and ADHD.
 
-## Installation
+## Install
 
 ### Ubuntu / Debian
 ```bash
@@ -21,10 +21,10 @@ sudo dnf install bildordbok
 ```
 Repo: [yeager/rpm-repo](https://github.com/yeager/rpm-repo)
 
-## Översättning
+## Translation
 
-Översätts via [Transifex](https://app.transifex.com/danielnylander/bildordbok/). 11 språk.
+Translated via [Transifex](https://app.transifex.com/danielnylander/bildordbok/). 11 languages.
 
-## Licens
+## License
 
 GPL-3.0-or-later · Daniel Nylander <daniel@danielnylander.se>
