@@ -22,7 +22,6 @@ from bildordbok.accessibility import AccessibilityManager
 
 APP_ID = "se.danielnylander.Bildordbok"
 
-
 class WordCard(Gtk.Box):
     """A card showing a word with emoji, text in both languages and TTS buttons."""
 
@@ -84,7 +83,6 @@ class WordCard(Gtk.Box):
         en_btn.connect("clicked", lambda _: speak(word.en, "en"))
         en_box.append(en_btn)
         self.append(en_box)
-
 
 class FlashcardView(Gtk.Box):
     """Spaced repetition flashcard view."""
@@ -243,7 +241,6 @@ class FlashcardView(Gtk.Box):
     def _speak_en(self, _btn):
         if self.current_idx < len(self.cards):
             speak(self.cards[self.current_idx].en, "en")
-
 
 class BildordbokWindow(Adw.ApplicationWindow):
     def __init__(self, app):
@@ -504,9 +501,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
             mgr.set_color_scheme(Adw.ColorScheme.DEFAULT)
             btn.set_icon_name("weather-clear-night-symbolic")
 
-
 CONFIG_DIR = Path(GLib.get_user_config_dir()) / "bildordbok"
-
 
 def _load_settings():
     path = CONFIG_DIR / "settings.json"
@@ -517,12 +512,10 @@ def _load_settings():
             pass
     return {}
 
-
 def _save_settings(settings):
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
     (CONFIG_DIR / "settings.json").write_text(
         json.dumps(settings, indent=2, ensure_ascii=False))
-
 
 class BildordbokApp(Adw.Application):
     def __init__(self):
@@ -767,7 +760,6 @@ class BildordbokApp(Adw.Application):
             website="https://github.com/yeager/bildordbok",
             issue_url="https://github.com/yeager/bildordbok/issues",
             support_url="https://www.autismappar.se",
-            translate_url="https://app.transifex.com/danielnylander/bildordbok",
             comments=_(
                 "Bilingual picture dictionary with text-to-speech "
                 "for children with language disorders.\n\n"
@@ -786,6 +778,8 @@ class BildordbokApp(Adw.Application):
         about.add_link("ARASAAC", "https://arasaac.org")
         about.add_link("Piper TTS", "https://github.com/rhasspy/piper")
         about.add_link("espeak-ng", "https://github.com/espeak-ng/espeak-ng")
+        about.add_link(_("Help translate"), "https://app.transifex.com/danielnylander/bildordbok")
+
         about.present(self.props.active_window)
 
     def _on_shortcuts(self, *_args):
@@ -845,15 +839,12 @@ class BildordbokApp(Adw.Application):
         win.set_transient_for(self.props.active_window)
         win.present()
 
-
 def main():
     app = BildordbokApp()
     app.run(sys.argv)
 
-
 if __name__ == "__main__":
     main()
-
 
 # --- Session restore ---
 import json as _json
@@ -881,7 +872,6 @@ def _restore_session(window, app_name):
     except (FileNotFoundError, _json.JSONDecodeError, OSError):
         pass
 
-
 # --- Fullscreen toggle (F11) ---
 def _setup_fullscreen(window, app):
     """Add F11 fullscreen toggle."""
@@ -893,7 +883,6 @@ def _setup_fullscreen(window, app):
         ))
         app.add_action(action)
         app.set_accels_for_action('app.toggle-fullscreen', ['F11'])
-
 
 # --- Plugin system ---
 import importlib.util
@@ -916,7 +905,6 @@ def _load_plugins(app_name):
             except Exception as e:
                 print(f"Plugin {fname}: {e}")
     return plugins
-
 
 # --- Sound notifications ---
 def _play_sound(sound_name='complete'):
