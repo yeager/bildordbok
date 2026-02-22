@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 20:53+0100\n"
+"POT-Creation-Date: 2026-02-22 06:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,220 +17,245 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/export.py:13 src/export.py:66 src/main.py:249 src/main.py:262
-#: src/main.py:757
+#: src/bildordbok/export.py:13 src/bildordbok/export.py:66
+#: src/bildordbok/main.py:249 src/bildordbok/main.py:262
+#: src/bildordbok/main.py:757
 msgid "Picture Dictionary"
 msgstr ""
 
-#: src/export.py:27 src/export.py:81
+#: src/bildordbok/export.py:27 src/bildordbok/export.py:81
 msgid "Swedish"
 msgstr ""
 
-#: src/export.py:27 src/export.py:83
+#: src/bildordbok/export.py:27 src/bildordbok/export.py:83
 msgid "English"
 msgstr ""
 
-#: src/export.py:27 src/export.py:85
+#: src/bildordbok/export.py:27 src/bildordbok/export.py:85
 msgid "Category"
 msgstr ""
 
-#: src/export.py:27
+#: src/bildordbok/export.py:27
 msgid "Emoji"
 msgstr ""
 
-#: src/export.py:71
+#: src/bildordbok/export.py:71
 msgid "words"
 msgstr ""
 
-#: src/export.py:132 src/main.py:289
+#: src/bildordbok/export.py:132 src/bildordbok/main.py:289
 msgid "Export Word List"
 msgstr ""
 
-#: src/export.py:133
+#: src/bildordbok/export.py:133
 msgid "Choose export format:"
 msgstr ""
 
-#: src/export.py:135
+#: src/bildordbok/export.py:135
 msgid "Cancel"
 msgstr ""
 
-#: src/export.py:136
+#: src/bildordbok/export.py:136
 msgid "CSV"
 msgstr ""
 
-#: src/export.py:137
+#: src/bildordbok/export.py:137
 msgid "JSON"
 msgstr ""
 
-#: src/export.py:138
+#: src/bildordbok/export.py:138
 msgid "PDF"
 msgstr ""
 
-#: src/export.py:158
+#: src/bildordbok/export.py:158
 msgid "Save Export"
 msgstr ""
 
-#: src/export.py:172
+#: src/bildordbok/export.py:172
 #, python-format
 msgid "Exported %s"
 msgstr ""
 
-#: src/export.py:175 src/export.py:198
+#: src/bildordbok/export.py:175 src/bildordbok/export.py:198
 #, python-format
 msgid "Export error: %s"
 msgstr ""
 
-#: src/export.py:180
+#: src/bildordbok/export.py:180
 msgid "Save PDF"
 msgstr ""
 
-#: src/export.py:193
+#: src/bildordbok/export.py:193
 msgid "PDF exported"
 msgstr ""
 
-#: src/export.py:195
+#: src/bildordbok/export.py:195
 msgid "PDF export requires pycairo"
 msgstr ""
 
-#: src/main.py:67
+#: src/bildordbok/words.py:15
+msgid "Animals"
+msgstr ""
+
+#: src/bildordbok/words.py:16
+msgid "Food"
+msgstr ""
+
+#: src/bildordbok/words.py:17
+msgid "Clothes"
+msgstr ""
+
+#: src/bildordbok/words.py:18
+msgid "Body"
+msgstr ""
+
+#: src/bildordbok/words.py:19
+msgid "Home"
+msgstr ""
+
+#: src/bildordbok/words.py:20
+msgid "School"
+msgstr ""
+
+#: src/bildordbok/main.py:67
 msgid "Listen (Swedish)"
 msgstr ""
 
-#: src/main.py:82
+#: src/bildordbok/main.py:82
 msgid "Listen (English)"
 msgstr ""
 
-#: src/main.py:136
+#: src/bildordbok/main.py:136
 msgid "🔊 Swedish"
 msgstr ""
 
-#: src/main.py:139
+#: src/bildordbok/main.py:139
 msgid "🔊 English"
 msgstr ""
 
-#: src/main.py:147
+#: src/bildordbok/main.py:147
 msgid "Show Answer"
 msgstr ""
 
-#: src/main.py:160
+#: src/bildordbok/main.py:160
 msgid "Wrong ✗"
 msgstr ""
 
-#: src/main.py:161
+#: src/bildordbok/main.py:161
 msgid "Hard"
 msgstr ""
 
-#: src/main.py:162
+#: src/bildordbok/main.py:162
 msgid "Good"
 msgstr ""
 
-#: src/main.py:163
+#: src/bildordbok/main.py:163
 msgid "Easy ✓"
 msgstr ""
 
-#: src/main.py:178
+#: src/bildordbok/main.py:178
 msgid "🎉 All cards done!"
 msgstr ""
 
-#: src/main.py:181 src/main.py:275
+#: src/bildordbok/main.py:181 src/bildordbok/main.py:275
 msgid "Back"
 msgstr ""
 
-#: src/main.py:200
+#: src/bildordbok/main.py:200
 msgid "No cards to practice!"
 msgstr ""
 
-#: src/main.py:216
+#: src/bildordbok/main.py:216
 #, python-brace-format
 msgid "Card {current} / {total}"
 msgstr ""
 
-#: src/main.py:262 src/main.py:453
+#: src/bildordbok/main.py:262 src/bildordbok/main.py:453
 msgid "Bilingual picture dictionary"
 msgstr ""
 
-#: src/main.py:268
+#: src/bildordbok/main.py:268
 msgid "Search (Ctrl+F)"
 msgstr ""
 
-#: src/main.py:282
+#: src/bildordbok/main.py:282
 msgid "Toggle theme"
 msgstr ""
 
-#: src/main.py:290 src/main.py:610
+#: src/bildordbok/main.py:290 src/bildordbok/main.py:610
 msgid "Preferences"
 msgstr ""
 
-#: src/main.py:291
+#: src/bildordbok/main.py:291
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/main.py:292
+#: src/bildordbok/main.py:292
 msgid "About Picture Dictionary"
 msgstr ""
 
-#: src/main.py:293
+#: src/bildordbok/main.py:293
 msgid "Quit"
 msgstr ""
 
-#: src/main.py:299
+#: src/bildordbok/main.py:299
 msgid "Flashcards / Practice"
 msgstr ""
 
-#: src/main.py:307
+#: src/bildordbok/main.py:307
 msgid "Search words..."
 msgstr ""
 
-#: src/main.py:363 src/main.py:454
+#: src/bildordbok/main.py:363 src/bildordbok/main.py:454
 #, python-brace-format
 msgid "{count} words in dictionary"
 msgstr ""
 
-#: src/main.py:383
+#: src/bildordbok/main.py:383
 msgid "📖 Bildordbok"
 msgstr ""
 
-#: src/main.py:387
+#: src/bildordbok/main.py:387
 msgid "Choose a category to start learning words"
 msgstr ""
 
-#: src/main.py:419
+#: src/bildordbok/main.py:419
 #, python-brace-format
 msgid "{count} words"
 msgstr ""
 
-#: src/main.py:448
+#: src/bildordbok/main.py:448
 #, python-brace-format
 msgid "{count} words in {category}"
 msgstr ""
 
-#: src/main.py:486
+#: src/bildordbok/main.py:486
 #, python-brace-format
 msgid "Search results: \"{query}\""
 msgstr ""
 
-#: src/main.py:487
+#: src/bildordbok/main.py:487
 #, python-brace-format
 msgid "{count} results"
 msgstr ""
 
-#: src/main.py:491
+#: src/bildordbok/main.py:491
 msgid "📝 Flashcards"
 msgstr ""
 
-#: src/main.py:494
+#: src/bildordbok/main.py:494
 msgid "Practice mode — Spaced Repetition"
 msgstr ""
 
-#: src/main.py:572
+#: src/bildordbok/main.py:572
 msgid "Welcome"
 msgstr ""
 
-#: src/main.py:578
+#: src/bildordbok/main.py:578
 msgid "Welcome to Picture Dictionary"
 msgstr ""
 
-#: src/main.py:580
+#: src/bildordbok/main.py:580
 msgid ""
 "Learn words with pictures and speech.\n"
 "\n"
@@ -240,135 +265,135 @@ msgid ""
 "✓ ARASAAC pictograms included"
 msgstr ""
 
-#: src/main.py:587
+#: src/bildordbok/main.py:587
 msgid "Get Started"
 msgstr ""
 
-#: src/main.py:613
+#: src/bildordbok/main.py:613
 msgid "General"
 msgstr ""
 
-#: src/main.py:617
+#: src/bildordbok/main.py:617
 msgid "Appearance"
 msgstr ""
 
-#: src/main.py:620
+#: src/bildordbok/main.py:620
 msgid "Theme"
 msgstr ""
 
-#: src/main.py:621
+#: src/bildordbok/main.py:621
 msgid "Choose light, dark, or follow system"
 msgstr ""
 
-#: src/main.py:623
+#: src/bildordbok/main.py:623
 msgid "System"
 msgstr ""
 
-#: src/main.py:623
+#: src/bildordbok/main.py:623
 msgid "Light"
 msgstr ""
 
-#: src/main.py:623
+#: src/bildordbok/main.py:623
 msgid "Dark"
 msgstr ""
 
-#: src/main.py:631
+#: src/bildordbok/main.py:631
 msgid "Icon Size"
 msgstr ""
 
-#: src/main.py:632
+#: src/bildordbok/main.py:632
 msgid "Size of pictogram icons"
 msgstr ""
 
-#: src/main.py:634
+#: src/bildordbok/main.py:634
 msgid "Small"
 msgstr ""
 
-#: src/main.py:634
+#: src/bildordbok/main.py:634
 msgid "Medium"
 msgstr ""
 
-#: src/main.py:634
+#: src/bildordbok/main.py:634
 msgid "Large"
 msgstr ""
 
-#: src/main.py:642 src/main.py:656
+#: src/bildordbok/main.py:642 src/bildordbok/main.py:656
 msgid "Speech"
 msgstr ""
 
-#: src/main.py:645
+#: src/bildordbok/main.py:645
 msgid "Text-to-speech"
 msgstr ""
 
-#: src/main.py:646
+#: src/bildordbok/main.py:646
 msgid "Read words aloud when tapped"
 msgstr ""
 
-#: src/main.py:659
+#: src/bildordbok/main.py:659
 msgid "Speech Engine"
 msgstr ""
 
-#: src/main.py:660
+#: src/bildordbok/main.py:660
 msgid "Piper gives natural voices, espeak is robotic but lightweight"
 msgstr ""
 
-#: src/main.py:662
+#: src/bildordbok/main.py:662
 msgid "Automatic"
 msgstr ""
 
-#: src/main.py:662
+#: src/bildordbok/main.py:662
 msgid "Piper (natural)"
 msgstr ""
 
-#: src/main.py:662
+#: src/bildordbok/main.py:662
 msgid "espeak-ng (robotic)"
 msgstr ""
 
-#: src/main.py:670
+#: src/bildordbok/main.py:670
 msgid "Speech Speed"
 msgstr ""
 
-#: src/main.py:671
+#: src/bildordbok/main.py:671
 msgid "Slower speech can be easier to understand"
 msgstr ""
 
-#: src/main.py:686
+#: src/bildordbok/main.py:686
 msgid "Advanced"
 msgstr ""
 
-#: src/main.py:690
+#: src/bildordbok/main.py:690
 msgid "ARASAAC Cache"
 msgstr ""
 
-#: src/main.py:695
+#: src/bildordbok/main.py:695
 msgid "Cached pictograms"
 msgstr ""
 
-#: src/main.py:697
+#: src/bildordbok/main.py:697
 msgid "Clear"
 msgstr ""
 
-#: src/main.py:706
+#: src/bildordbok/main.py:706
 msgid "Developer"
 msgstr ""
 
-#: src/main.py:708
+#: src/bildordbok/main.py:708
 msgid "Debug mode"
 msgstr ""
 
-#: src/main.py:709
+#: src/bildordbok/main.py:709
 msgid "Show extra logging in terminal"
 msgstr ""
 
-#: src/main.py:741
+#: src/bildordbok/main.py:741
 msgid "Cleared"
 msgstr ""
 
-#: src/main.py:763
+#: src/bildordbok/main.py:763
 msgid "ARASAAC pictograms (https://arasaac.org)"
 msgstr ""
 
-#: src/main.py:771
+#: src/bildordbok/main.py:771
 msgid ""
 "Bilingual picture dictionary with text-to-speech for children with language "
 "disorders.\n"
@@ -377,30 +402,6 @@ msgid ""
 "structure."
 msgstr ""
 
-#: src/main.py:782
+#: src/bildordbok/main.py:782
 msgid "Autismappar"
-msgstr ""
-
-#: src/words.py:15
-msgid "Animals"
-msgstr ""
-
-#: src/words.py:16
-msgid "Food"
-msgstr ""
-
-#: src/words.py:17
-msgid "Clothes"
-msgstr ""
-
-#: src/words.py:18
-msgid "Body"
-msgstr ""
-
-#: src/words.py:19
-msgid "Home"
-msgstr ""
-
-#: src/words.py:20
-msgid "School"
 msgstr ""
