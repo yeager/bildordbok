@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 18:38+0100\n"
+"POT-Creation-Date: 2026-02-23 08:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/bildordbok/main.py:63
-msgid "Lyssna (svenska)"
-msgstr ""
-
-#: src/bildordbok/main.py:78
-msgid "Listen (English)"
-msgstr ""
-
-#: src/bildordbok/main.py:132
-msgid "🔊 Svenska"
-msgstr ""
-
-#: src/bildordbok/main.py:135
-msgid "🔊 English"
-msgstr ""
-
-#: src/bildordbok/main.py:143
-msgid "Visa svar"
-msgstr ""
-
-#: src/bildordbok/main.py:156
-msgid "Fel ✗"
-msgstr ""
-
-#: src/bildordbok/main.py:157
-msgid "Svårt"
+#: src/bildordbok/main.py:245
+msgid "Bildordbok"
 msgstr ""
 
 #: src/bildordbok/main.py:158
 msgid "Bra"
 msgstr ""
 
-#: src/bildordbok/main.py:159
-msgid "Lätt ✓"
+#: src/bildordbok/main.py:156
+msgid "Fel ✗"
 msgstr ""
 
-#: src/bildordbok/main.py:174
-msgid "🎉 Alla kort klara!"
-msgstr ""
-
-#: src/bildordbok/main.py:177 src/bildordbok/main.py:271
-msgid "Tillbaka"
+#: src/bildordbok/main.py:291
+msgid "Flashcards / Övning"
 msgstr ""
 
 #: src/bildordbok/main.py:196
@@ -70,56 +42,37 @@ msgstr ""
 msgid "Kort {current} / {total}"
 msgstr ""
 
-#: src/bildordbok/main.py:245 src/bildordbok/main.py:258
-#: src/bildordbok/main.py:528
-msgid "Bildordbok"
+#: src/bildordbok/main.py:78
+msgid "Listen (English)"
 msgstr ""
 
-#: src/bildordbok/main.py:258 src/bildordbok/main.py:445
-msgid "Tvåspråkig bildordbok"
+#: src/bildordbok/main.py:63
+msgid "Lyssna (svenska)"
 msgstr ""
 
-#: src/bildordbok/main.py:264
-msgid "Sök (Ctrl+F)"
-msgstr ""
-
-#: src/bildordbok/main.py:278
-msgid "Växla tema"
+#: src/bildordbok/main.py:159
+msgid "Lätt ✓"
 msgstr ""
 
 #: src/bildordbok/main.py:285
 msgid "Om Bildordbok"
 msgstr ""
 
-#: src/bildordbok/main.py:291
-msgid "Flashcards / Övning"
+#. Title
+#: src/bildordbok/main.py:258 src/bildordbok/main.py:528
+msgid "Picture Dictionary"
+msgstr ""
+
+#: src/bildordbok/main.py:157
+msgid "Svårt"
+msgstr ""
+
+#: src/bildordbok/main.py:264
+msgid "Sök (Ctrl+F)"
 msgstr ""
 
 #: src/bildordbok/main.py:299
 msgid "Sök ord..."
-msgstr ""
-
-#: src/bildordbok/main.py:355 src/bildordbok/main.py:446
-#, python-brace-format
-msgid "{count} ord i ordboken"
-msgstr ""
-
-#: src/bildordbok/main.py:375
-msgid "📖 Bildordbok"
-msgstr ""
-
-#: src/bildordbok/main.py:379
-msgid "Välj en kategori för att börja lära dig ord"
-msgstr ""
-
-#: src/bildordbok/main.py:411
-#, python-brace-format
-msgid "{count} ord"
-msgstr ""
-
-#: src/bildordbok/main.py:440
-#, python-brace-format
-msgid "{count} ord i {category}"
 msgstr ""
 
 #: src/bildordbok/main.py:478
@@ -127,21 +80,74 @@ msgstr ""
 msgid "Sökresultat: \"{query}\""
 msgstr ""
 
-#: src/bildordbok/main.py:479
-#, python-brace-format
-msgid "{count} träffar"
+#: src/bildordbok/main.py:177 src/bildordbok/main.py:271
+msgid "Tillbaka"
 msgstr ""
 
-#: src/bildordbok/main.py:483
-msgid "📝 Flashcards"
-msgstr ""
-
-#: src/bildordbok/main.py:486
-msgid "Övningsläge – Spaced Repetition"
+#: src/bildordbok/main.py:258 src/bildordbok/main.py:445
+msgid "Tvåspråkig bildordbok"
 msgstr ""
 
 #: src/bildordbok/main.py:537
 msgid ""
 "Tvåspråkig bildordbok med TTS.\n"
 "För barn med språkstörning och nyanlända."
+msgstr ""
+
+#. Reveal button
+#: src/bildordbok/main.py:143
+msgid "Visa svar"
+msgstr ""
+
+#: src/bildordbok/main.py:379
+msgid "Välj en kategori för att börja lära dig ord"
+msgstr ""
+
+#: src/bildordbok/main.py:278
+msgid "Växla tema"
+msgstr ""
+
+#: src/bildordbok/main.py:411
+#, python-brace-format
+msgid "{count} ord"
+msgstr ""
+
+#. Status bar
+#: src/bildordbok/main.py:355 src/bildordbok/main.py:446
+#, python-brace-format
+msgid "{count} ord i ordboken"
+msgstr ""
+
+#: src/bildordbok/main.py:440
+#, python-brace-format
+msgid "{count} ord i {category}"
+msgstr ""
+
+#: src/bildordbok/main.py:479
+#, python-brace-format
+msgid "{count} träffar"
+msgstr ""
+
+#: src/bildordbok/main.py:486
+msgid "Övningsläge – Spaced Repetition"
+msgstr ""
+
+#: src/bildordbok/main.py:174
+msgid "🎉 Alla kort klara!"
+msgstr ""
+
+#: src/bildordbok/main.py:375
+msgid "📖 Bildordbok"
+msgstr ""
+
+#: src/bildordbok/main.py:483
+msgid "📝 Flashcards"
+msgstr ""
+
+#: src/bildordbok/main.py:135
+msgid "🔊 English"
+msgstr ""
+
+#: src/bildordbok/main.py:132
+msgid "🔊 Svenska"
 msgstr ""

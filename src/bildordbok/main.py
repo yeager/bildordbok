@@ -255,7 +255,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
         self.main_box.append(self.header)
 
         # Title
-        title_widget = Adw.WindowTitle(title=_("Bildordbok"), subtitle=_("Tvåspråkig bildordbok"))
+        title_widget = Adw.WindowTitle(title=_("Picture Dictionary"), subtitle=_("Tvåspråkig bildordbok"))
         self.header.set_title_widget(title_widget)
         self.title_widget = title_widget
 
@@ -525,7 +525,7 @@ class BildordbokApp(Adw.Application):
 
     def _on_about(self, *_args):
         about = Adw.AboutDialog(
-            application_name=_("Bildordbok"),
+            application_name=_("Picture Dictionary"),
             application_icon="se.danielnylander.Bildordbok",
             developer_name="Daniel Nylander",
             version=__version__,
