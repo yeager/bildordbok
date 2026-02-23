@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 08:49+0100\n"
+"POT-Creation-Date: 2026-02-23 08:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Title
 #: src/bildordbok/export.py:13 src/bildordbok/export.py:66
 #: src/bildordbok/main.py:247 src/bildordbok/main.py:260
 #: src/bildordbok/main.py:751
@@ -110,7 +109,6 @@ msgstr ""
 msgid "🔊 English"
 msgstr ""
 
-#. Reveal button
 #: src/bildordbok/main.py:146
 msgid "Show Answer"
 msgstr ""
@@ -184,14 +182,13 @@ msgstr ""
 msgid "Search words..."
 msgstr ""
 
-#. Status bar
 #: src/bildordbok/main.py:361 src/bildordbok/main.py:452
 #, python-brace-format
 msgid "{count} words in dictionary"
 msgstr ""
 
 #: src/bildordbok/main.py:381
-msgid "📖 Bildordbok"
+msgid "📖 Picture Dictionary"
 msgstr ""
 
 #: src/bildordbok/main.py:385

@@ -392,7 +392,7 @@ class BildordbokWindow(Adw.ApplicationWindow):
 
         # Welcome
         welcome = Gtk.Label()
-        welcome.set_markup('<span size="24000">' + _('📖 Bildordbok') + '</span>')
+        welcome.set_markup('<span size="24000">' + _('📖 Picture Dictionary') + '</span>')
         welcome.set_margin_bottom(8)
         box.append(welcome)
 
