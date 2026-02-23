@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bildordbok"
-version = "0.1.1"
+version = "0.3.6"
 description = "Tvåspråkig bildordbok med TTS – för barn med språkstörning och nyanlända"
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -25,3 +25,6 @@ Repository = "https://github.com/yeager/bildordbok"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["data/*.json"]
