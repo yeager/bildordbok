@@ -9,6 +9,6 @@ Icon=se.danielnylander.Bildordbok
 Terminal=false
 Type=Application
 StartupWMClass=se.danielnylander.Bildordbok
-Categories=Education;Languages;
+Categories=Education;Languages;Autismappar
 Keywords=ordbok;dictionary;tts;flashcard;
 StartupNotify=true
