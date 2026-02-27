@@ -1,3 +1,5 @@
+> **⚠️ This app has been migrated to the Autismappar PWA at https://autismappar.se**
+
 # Bildordbok
 
 Visual picture dictionary with ARASAAC pictograms for language development.
